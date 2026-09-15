@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Vocabulario — Flashcards y Quiz</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<h1><span class="unit-tag">EXTRA</span>Vocabulario — Flashcards + Quiz</h1>
+<p class="subtitle">Las 4 Vocabulary Banks en formato de memorización activa. Úsalo cualquier día, no reemplaza los ejercicios de gramática.</p>
+
+<div class="card">
+<strong>Cómo usar esta página:</strong> primero las <strong>flashcards</strong> (haz clic para voltear y ver el significado — repítelas hasta reconocer la palabra sin voltear). Después el <strong>quiz</strong> para comprobar que de verdad quedó grabado. Repite cuantas veces quieras.
+</div>
+
+<h2>1. Personalidad (SB p.153)</h2>
+<h3>Flashcards</h3>
+<div class="flashcard-grid" id="fc-personality">
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">spoiled</div><div class="back">consentido/a — le dan todo lo que pide</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">stubborn</div><div class="back">terco/a — nunca cambia de opinión</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">insecure</div><div class="back">inseguro/a — no confía en sí mismo</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">selfish</div><div class="back">egoísta — solo piensa en sí mismo</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">sensible</div><div class="back">sensato/a, práctico/a (¡NO es "sensible" en español!)</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">sensitive</div><div class="back">se ofende/hiere fácilmente</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">bossy</div><div class="back">mandón/a — le gusta decirle a otros qué hacer</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">reliable</div><div class="back">confiable — se puede depender de él/ella</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">moody</div><div class="back">cambia de humor rápido y seguido</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">rebellious</div><div class="back">rebelde — no le gusta obedecer reglas</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">mature</div><div class="back">maduro/a — se comporta como adulto</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">affectionate</div><div class="back">cariñoso/a — demuestra afecto seguido</div></div>
+</div>
+
+<h3>Quiz</h3>
+<div id="mc-personality">
+<div class="mc-question" data-correct="Stubborn">
+<p>"People never change their opinion or attitude about something."</p>
+<div class="mc-options">
+<button onclick="selectOption(this, this.closest('.mc-question'))">Stubborn</button>
+<button onclick="selectOption(this, this.closest('.mc-question'))">Sociable</button>
+<button onclick="selectOption(this, this.closest('.mc-question'))">Patient</button>
+</div>
+<div class="mc-feedback"></div>
+</div>
+<div class="mc-question" data-correct="Insecure">
+<p>"People are not confident about themselves."</p>
+<div class="mc-options">
+<button onclick="selectOption(this, this.closest('.mc-question'))">Ambitious</button>
+<button onclick="selectOption(this, this.closest('.mc-question'))">Insecure</button>
+<button onclick="selectOption(this, this.closest('.mc-question'))">Charming</button>
+</div>
+<div class="mc-feedback"></div>
+</div>
+<div class="mc-question" data-correct="Sensible">
+<p>Falso amigo — significa "práctico, con sentido común" (NO "sensible" como en español):</p>
+<div class="mc-options">
+<button onclick="selectOption(this, this.closest('.mc-question'))">Sensitive</button>
+<button onclick="selectOption(this, this.closest('.mc-question'))">Sensible</button>
+<button onclick="selectOption(this, this.closest('.mc-question'))">Sympathetic</button>
+</div>
+<div class="mc-feedback" data-rule="sensitive = se ofende fácil; sympathetic = compasivo con alguien triste."></div>
+</div>
+<div class="mc-question" data-correct="Bossy">
+<p>"People like telling other people what to do."</p>
+<div class="mc-options">
+<button onclick="selectOption(this, this.closest('.mc-question'))">Bossy</button>
+<button onclick="selectOption(this, this.closest('.mc-question'))">Reliable</button>
+<button onclick="selectOption(this, this.closest('.mc-question'))">Mature</button>
+</div>
+<div class="mc-feedback"></div>
+</div>
+</div>
+<button class="check-btn" onclick="resetSection('mc-personality')">Repetir este quiz</button>
+
+<h2>2. Dinero (SB p.154)</h2>
+<h3>Flashcards</h3>
+<div class="flashcard-grid" id="fc-money">
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">inherit</div><div class="back">heredar</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">owe</div><div class="back">deber (dinero)</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">borrow</div><div class="back">pedir prestado</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">lend</div><div class="back">prestar (tú lo das)</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">be worth</div><div class="back">valer (tener un valor de)</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">can't afford</div><div class="back">no poder pagar/costear</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">mortgage</div><div class="back">hipoteca</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">loan</div><div class="back">préstamo</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">salary</div><div class="back">salario</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">tax</div><div class="back">impuesto</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">budget</div><div class="back">presupuesto</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">bill</div><div class="back">factura/cuenta por pagar</div></div>
+</div>
+
+<h3>Quiz</h3>
+<div id="mc-money">
+<div class="mc-question" data-correct="Inherit">
+<p>"My uncle died and left me $5,000." → I'm going to ______ $5,000.</p>
+<div class="mc-options">
+<button onclick="selectOption(this, this.closest('.mc-question'))">Invest</button>
+<button onclick="selectOption(this, this.closest('.mc-question'))">Inherit</button>
+<button onclick="selectOption(this, this.closest('.mc-question'))">Owe</button>
+</div>
+<div class="mc-feedback"></div>
+</div>
+<div class="mc-question" data-correct="Owe">
+<p>"Jim gave me $100, I haven't paid him back yet." → I ______ Jim $100.</p>
+<div class="mc-options">
+<button onclick="selectOption(this, this.closest('.mc-question'))">Lend</button>
+<button onclick="selectOption(this, this.closest('.mc-question'))">Borrow</button>
+<button onclick="selectOption(this, this.closest('.mc-question'))">Owe</button>
+</div>
+<div class="mc-feedback"></div>
+</div>
+<div class="mc-question" data-correct="Mortgage">
+<p>Money that you borrow from a bank specifically to buy a house.</p>
+<div class="mc-options">
+<button onclick="selectOption(this, this.closest('.mc-question'))">Loan</button>
+<button onclick="selectOption(this, this.closest('.mc-question'))">Mortgage</button>
+<button onclick="selectOption(this, this.closest('.mc-question'))">Budget</button>
+</div>
+<div class="mc-feedback"></div>
+</div>
+</div>
+<button class="check-btn" onclick="resetSection('mc-money')">Repetir este quiz</button>
+
+<h2>3. Deportes (SB p.157)</h2>
+<h3>Flashcards</h3>
+<div class="flashcard-grid" id="fc-sports">
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">referee</div><div class="back">árbitro (deportes de equipo)</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">umpire</div><div class="back">árbitro (béisbol, tenis)</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">spectators</div><div class="back">espectadores</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">captain</div><div class="back">capitán del equipo</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">court</div><div class="back">cancha (tenis/básquet)</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">track</div><div class="back">pista (atletismo)</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">warm up</div><div class="back">calentar antes de ejercitar</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">work out</div><div class="back">hacer ejercicio</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">be sent off</div><div class="back">ser expulsado</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">be knocked out</div><div class="back">ser eliminado</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">beat</div><div class="back">vencer a (un rival)</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">tie</div><div class="back">empatar</div></div>
+</div>
+
+<h3>Quiz</h3>
+<div id="mc-sports">
+<div class="mc-question" data-correct="Beat">
+<p>My team ______ Manchester United 3-0. (vencí a otro equipo)</p>
+<div class="mc-options">
+<button onclick="selectOption(this, this.closest('.mc-question'))">Won</button>
+<button onclick="selectOption(this, this.closest('.mc-question'))">Beat</button>
+<button onclick="selectOption(this, this.closest('.mc-question'))">Tied</button>
+</div>
+<div class="mc-feedback" data-rule="win + juego/medalla; beat + rival."></div>
+</div>
+<div class="mc-question" data-correct="Referee">
+<p>An official who makes sure players obey the rules in soccer or basketball.</p>
+<div class="mc-options">
+<button onclick="selectOption(this, this.closest('.mc-question'))">Umpire</button>
+<button onclick="selectOption(this, this.closest('.mc-question'))">Referee</button>
+<button onclick="selectOption(this, this.closest('.mc-question'))">Coach</button>
+</div>
+<div class="mc-feedback"></div>
+</div>
+</div>
+<button class="check-btn" onclick="resetSection('mc-sports')">Repetir este quiz</button>
+
+<h2>4. Relaciones (SB p.158)</h2>
+<h3>Flashcards</h3>
+<div class="flashcard-grid" id="fc-relationships">
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">couple</div><div class="back">pareja</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">fiancé / fiancée</div><div class="back">prometido / prometida</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">ex</div><div class="back">ex pareja (coloquial)</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">roommate</div><div class="back">compañero/a de cuarto/depto</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">get along</div><div class="back">llevarse bien</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">break up</div><div class="back">terminar una relación</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">lose touch</div><div class="back">perder contacto</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">get in touch</div><div class="back">volver a contactar</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">have in common</div><div class="back">tener en común</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">propose</div><div class="back">proponer matrimonio</div></div>
+</div>
+
+<h3>Quiz</h3>
+<div id="mc-relationships">
+<div class="mc-question" data-correct="Break up">
+<p>"We argued a lot, and eventually we ______." (terminamos la relación)</p>
+<div class="mc-options">
+<button onclick="selectOption(this, this.closest('.mc-question'))">Get along</button>
+<button onclick="selectOption(this, this.closest('.mc-question'))">Break up</button>
+<button onclick="selectOption(this, this.closest('.mc-question'))">Get in touch</button>
+</div>
+<div class="mc-feedback"></div>
+</div>
+<div class="mc-question" data-correct="Fiancé">
+<p>The person you are engaged to be married to (male).</p>
+<div class="mc-options">
+<button onclick="selectOption(this, this.closest('.mc-question'))">Fiancé</button>
+<button onclick="selectOption(this, this.closest('.mc-question'))">Partner</button>
+<button onclick="selectOption(this, this.closest('.mc-question'))">Ex</button>
+</div>
+<div class="mc-feedback"></div>
+</div>
+</div>
+<button class="check-btn" onclick="resetSection('mc-relationships')">Repetir este quiz</button>
+
+<div class="ask-teacher">💬 ¿Alguna palabra te sigue costando después de fallar el quiz un par de veces? Dime cuál y te doy 3 oraciones más de ejemplo para fijarla — o inventamos una regla mnemotécnica juntos.</div>
+
+<p class="source-tag">Vocabulario extraído de Student Book pp. 153, 154, 157, 158 (Vocabulary Banks).</p>
+
+<div class="nav">
+<a href="../index.html">← Índice</a>
+<a href="0009-irregular-verbs-drill.html">Verbos irregulares →</a>
+</div>
+
+<script src="../assets/quiz.js"></script>
+</body>
+</html>

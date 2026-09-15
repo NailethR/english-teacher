@@ -41,3 +41,56 @@ function checkExercise(exerciseId) {
     scoreEl.textContent = `${correct} / ${inputs.length} correctas`;
   }
 }
+
+// Flashcards: click para voltear y revelar el significado/ejemplo.
+function toggleFlashcard(card) {
+  card.classList.toggle("flipped");
+}
+
+// Quiz de opción múltiple. Cada .mc-question tiene data-correct="texto exacto
+// del botón correcto". Al elegir, se marca correct/incorrect en todos los
+// botones de esa pregunta y se deshabilitan.
+function selectOption(button, question) {
+  const correctText = question.dataset.correct.trim().toLowerCase();
+  const buttons = question.querySelectorAll(".mc-options button");
+  const feedback = question.querySelector(".mc-feedback");
+  const chosenCorrect = button.textContent.trim().toLowerCase() === correctText;
+
+  buttons.forEach((b) => {
+    b.disabled = true;
+    if (b.textContent.trim().toLowerCase() === correctText) {
+      b.classList.add("correct");
+    } else if (b === button) {
+      b.classList.add("incorrect");
+    }
+  });
+
+  if (feedback) {
+    feedback.textContent = chosenCorrect
+      ? "✓ Correcto."
+      : `✗ La respuesta correcta era: ${question.dataset.correct}.`;
+    if (feedback.dataset.rule) {
+      feedback.textContent += " " + feedback.dataset.rule;
+    }
+  }
+}
+
+// Reinicia todas las flashcards y multiple-choice de un contenedor (útil
+// para "repetir esta sección" sin recargar la página).
+function resetSection(sectionId) {
+  const box = document.getElementById(sectionId);
+  if (!box) return;
+  box.querySelectorAll(".flashcard.flipped").forEach((c) => c.classList.remove("flipped"));
+  box.querySelectorAll(".mc-options button").forEach((b) => {
+    b.disabled = false;
+    b.classList.remove("correct", "incorrect");
+  });
+  box.querySelectorAll(".mc-feedback").forEach((f) => (f.textContent = ""));
+  box.querySelectorAll("input[type='text']").forEach((i) => {
+    i.value = "";
+    i.classList.remove("correct", "incorrect");
+  });
+  box.querySelectorAll(".explain").forEach((e) => e.classList.remove("show", "right", "wrong"));
+  const scoreEl = box.querySelector(".score");
+  if (scoreEl) scoreEl.textContent = "";
+}

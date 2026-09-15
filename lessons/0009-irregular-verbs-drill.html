@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Verbos irregulares — Drill completo</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<h1><span class="unit-tag">EXTRA</span>Verbos irregulares — Tabla completa (SB p.165)</h1>
+<p class="subtitle">Los 77 verbos irregulares del libro. Aparecen en Simple Past, Present Perfect y Past Perfect — vale la pena automatizarlos.</p>
+
+<div class="card">
+<strong>Cómo practicar:</strong> primero las flashcards de los más traicioneros. Luego resuelve los bloques de la tabla completa (15 verbos cada uno) escribiendo Simple Past y Past Participle. Repite los bloques donde falles hasta sacar el puntaje completo.
+</div>
+
+<h2>Los más traicioneros — flashcards</h2>
+<div class="flashcard-grid" id="fc-irregular">
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">be</div><div class="back">was/were/been — el más irregular de todos</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">go</div><div class="back">went/gone — no se parece nada al infinitivo</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">see</div><div class="back">saw/seen — ojo, no es &#39;seed&#39;</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">eat</div><div class="back">ate/eaten</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">drive</div><div class="back">drove/driven</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">break</div><div class="back">broke/broken</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">choose</div><div class="back">chose/chosen</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">speak</div><div class="back">spoke/spoken</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">steal</div><div class="back">stole/stolen</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">wake</div><div class="back">woke/woken</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">put</div><div class="back">put/put — igual en las 3 formas</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">cut</div><div class="back">cut/cut — igual en las 3 formas</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">cost</div><div class="back">cost/cost — igual en las 3 formas</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">read</div><div class="back">read/read — se escribe igual, ¡pero se pronuncia distinto! /rɛd/</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">hit</div><div class="back">hit/hit — igual en las 3 formas</div></div>
+</div>
+
+<h2>Mini-quiz rápido</h2>
+<div id="mc-irregular">
+<div class="mc-question" data-correct="seen">
+<p>I've never ______ (see) that movie.</p>
+<div class="mc-options"><button onclick="selectOption(this, this.closest('.mc-question'))">chose</button>
+<button onclick="selectOption(this, this.closest('.mc-question'))">seen</button>
+<button onclick="selectOption(this, this.closest('.mc-question'))">put</button></div>
+<div class="mc-feedback"></div>
+</div><div class="mc-question" data-correct="broke">
+<p>She ______ (break) her arm last year.</p>
+<div class="mc-options"><button onclick="selectOption(this, this.closest('.mc-question'))">broke</button>
+<button onclick="selectOption(this, this.closest('.mc-question'))">cut</button>
+<button onclick="selectOption(this, this.closest('.mc-question'))">seen</button></div>
+<div class="mc-feedback"></div>
+</div><div class="mc-question" data-correct="driven">
+<p>They've ______ (drive) all night.</p>
+<div class="mc-options"><button onclick="selectOption(this, this.closest('.mc-question'))">chose</button>
+<button onclick="selectOption(this, this.closest('.mc-question'))">put</button>
+<button onclick="selectOption(this, this.closest('.mc-question'))">driven</button></div>
+<div class="mc-feedback"></div>
+</div><div class="mc-question" data-correct="chose">
+<p>He ______ (choose) the blue one.</p>
+<div class="mc-options"><button onclick="selectOption(this, this.closest('.mc-question'))">chose</button>
+<button onclick="selectOption(this, this.closest('.mc-question'))">chosen</button>
+<button onclick="selectOption(this, this.closest('.mc-question'))">put</button></div>
+<div class="mc-feedback"></div>
+</div><div class="mc-question" data-correct="put">
+<p>We've ______ (put) the boxes in the garage.</p>
+<div class="mc-options"><button onclick="selectOption(this, this.closest('.mc-question'))">chose</button>
+<button onclick="selectOption(this, this.closest('.mc-question'))">broke</button>
+<button onclick="selectOption(this, this.closest('.mc-question'))">put</button></div>
+<div class="mc-feedback"></div>
+</div>
+</div>
+<button class="check-btn" onclick="resetSection('mc-irregular')">Repetir este quiz</button>
+
+<h2>Tabla completa — drill por bloques</h2>
+<div class="exercise" id="ivex1">
+<h3>Bloque 1 (15 verbos)</h3>
+<table class="drill-table">
+<tr><th>Infinitive</th><th>Simple Past</th><th>Past Participle</th></tr>
+<tr>
+<td class="infinitive">be</td>
+<td><input type="text" id="iv1-1p" data-answer="was|were" placeholder="past"></td>
+<td><input type="text" id="iv1-1pp" data-answer="been" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">beat</td>
+<td><input type="text" id="iv1-2p" data-answer="beat" placeholder="past"></td>
+<td><input type="text" id="iv1-2pp" data-answer="beaten" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">become</td>
+<td><input type="text" id="iv1-3p" data-answer="became" placeholder="past"></td>
+<td><input type="text" id="iv1-3pp" data-answer="become" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">begin</td>
+<td><input type="text" id="iv1-4p" data-answer="began" placeholder="past"></td>
+<td><input type="text" id="iv1-4pp" data-answer="begun" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">bite</td>
+<td><input type="text" id="iv1-5p" data-answer="bit" placeholder="past"></td>
+<td><input type="text" id="iv1-5pp" data-answer="bitten" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">break</td>
+<td><input type="text" id="iv1-6p" data-answer="broke" placeholder="past"></td>
+<td><input type="text" id="iv1-6pp" data-answer="broken" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">bring</td>
+<td><input type="text" id="iv1-7p" data-answer="brought" placeholder="past"></td>
+<td><input type="text" id="iv1-7pp" data-answer="brought" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">build</td>
+<td><input type="text" id="iv1-8p" data-answer="built" placeholder="past"></td>
+<td><input type="text" id="iv1-8pp" data-answer="built" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">buy</td>
+<td><input type="text" id="iv1-9p" data-answer="bought" placeholder="past"></td>
+<td><input type="text" id="iv1-9pp" data-answer="bought" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">catch</td>
+<td><input type="text" id="iv1-10p" data-answer="caught" placeholder="past"></td>
+<td><input type="text" id="iv1-10pp" data-answer="caught" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">choose</td>
+<td><input type="text" id="iv1-11p" data-answer="chose" placeholder="past"></td>
+<td><input type="text" id="iv1-11pp" data-answer="chosen" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">come</td>
+<td><input type="text" id="iv1-12p" data-answer="came" placeholder="past"></td>
+<td><input type="text" id="iv1-12pp" data-answer="come" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">cost</td>
+<td><input type="text" id="iv1-13p" data-answer="cost" placeholder="past"></td>
+<td><input type="text" id="iv1-13pp" data-answer="cost" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">cut</td>
+<td><input type="text" id="iv1-14p" data-answer="cut" placeholder="past"></td>
+<td><input type="text" id="iv1-14pp" data-answer="cut" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">do</td>
+<td><input type="text" id="iv1-15p" data-answer="did" placeholder="past"></td>
+<td><input type="text" id="iv1-15pp" data-answer="done" placeholder="past participle"></td>
+</tr>
+</table>
+<button class="check-btn" onclick="checkExercise('ivex1')">Revisar</button>
+<span class="score"></span>
+<button class="check-btn" style="background:var(--text-muted); margin-left:0.5rem" onclick="resetSection('ivex1')">Reiniciar</button>
+</div><div class="exercise" id="ivex2">
+<h3>Bloque 2 (15 verbos)</h3>
+<table class="drill-table">
+<tr><th>Infinitive</th><th>Simple Past</th><th>Past Participle</th></tr>
+<tr>
+<td class="infinitive">draw</td>
+<td><input type="text" id="iv2-1p" data-answer="drew" placeholder="past"></td>
+<td><input type="text" id="iv2-1pp" data-answer="drawn" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">dream</td>
+<td><input type="text" id="iv2-2p" data-answer="dreamed|dreamt" placeholder="past"></td>
+<td><input type="text" id="iv2-2pp" data-answer="dreamed|dreamt" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">drink</td>
+<td><input type="text" id="iv2-3p" data-answer="drank" placeholder="past"></td>
+<td><input type="text" id="iv2-3pp" data-answer="drunk" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">drive</td>
+<td><input type="text" id="iv2-4p" data-answer="drove" placeholder="past"></td>
+<td><input type="text" id="iv2-4pp" data-answer="driven" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">eat</td>
+<td><input type="text" id="iv2-5p" data-answer="ate" placeholder="past"></td>
+<td><input type="text" id="iv2-5pp" data-answer="eaten" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">fall</td>
+<td><input type="text" id="iv2-6p" data-answer="fell" placeholder="past"></td>
+<td><input type="text" id="iv2-6pp" data-answer="fallen" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">feel</td>
+<td><input type="text" id="iv2-7p" data-answer="felt" placeholder="past"></td>
+<td><input type="text" id="iv2-7pp" data-answer="felt" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">find</td>
+<td><input type="text" id="iv2-8p" data-answer="found" placeholder="past"></td>
+<td><input type="text" id="iv2-8pp" data-answer="found" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">fly</td>
+<td><input type="text" id="iv2-9p" data-answer="flew" placeholder="past"></td>
+<td><input type="text" id="iv2-9pp" data-answer="flown" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">forget</td>
+<td><input type="text" id="iv2-10p" data-answer="forgot" placeholder="past"></td>
+<td><input type="text" id="iv2-10pp" data-answer="forgotten" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">get</td>
+<td><input type="text" id="iv2-11p" data-answer="got" placeholder="past"></td>
+<td><input type="text" id="iv2-11pp" data-answer="gotten" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">give</td>
+<td><input type="text" id="iv2-12p" data-answer="gave" placeholder="past"></td>
+<td><input type="text" id="iv2-12pp" data-answer="given" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">go</td>
+<td><input type="text" id="iv2-13p" data-answer="went" placeholder="past"></td>
+<td><input type="text" id="iv2-13pp" data-answer="gone" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">grow</td>
+<td><input type="text" id="iv2-14p" data-answer="grew" placeholder="past"></td>
+<td><input type="text" id="iv2-14pp" data-answer="grown" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">hang</td>
+<td><input type="text" id="iv2-15p" data-answer="hung" placeholder="past"></td>
+<td><input type="text" id="iv2-15pp" data-answer="hung" placeholder="past participle"></td>
+</tr>
+</table>
+<button class="check-btn" onclick="checkExercise('ivex2')">Revisar</button>
+<span class="score"></span>
+<button class="check-btn" style="background:var(--text-muted); margin-left:0.5rem" onclick="resetSection('ivex2')">Reiniciar</button>
+</div><div class="exercise" id="ivex3">
+<h3>Bloque 3 (15 verbos)</h3>
+<table class="drill-table">
+<tr><th>Infinitive</th><th>Simple Past</th><th>Past Participle</th></tr>
+<tr>
+<td class="infinitive">have</td>
+<td><input type="text" id="iv3-1p" data-answer="had" placeholder="past"></td>
+<td><input type="text" id="iv3-1pp" data-answer="had" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">hear</td>
+<td><input type="text" id="iv3-2p" data-answer="heard" placeholder="past"></td>
+<td><input type="text" id="iv3-2pp" data-answer="heard" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">hit</td>
+<td><input type="text" id="iv3-3p" data-answer="hit" placeholder="past"></td>
+<td><input type="text" id="iv3-3pp" data-answer="hit" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">hurt</td>
+<td><input type="text" id="iv3-4p" data-answer="hurt" placeholder="past"></td>
+<td><input type="text" id="iv3-4pp" data-answer="hurt" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">keep</td>
+<td><input type="text" id="iv3-5p" data-answer="kept" placeholder="past"></td>
+<td><input type="text" id="iv3-5pp" data-answer="kept" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">know</td>
+<td><input type="text" id="iv3-6p" data-answer="knew" placeholder="past"></td>
+<td><input type="text" id="iv3-6pp" data-answer="known" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">learn</td>
+<td><input type="text" id="iv3-7p" data-answer="learned" placeholder="past"></td>
+<td><input type="text" id="iv3-7pp" data-answer="learned" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">leave</td>
+<td><input type="text" id="iv3-8p" data-answer="left" placeholder="past"></td>
+<td><input type="text" id="iv3-8pp" data-answer="left" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">lend</td>
+<td><input type="text" id="iv3-9p" data-answer="lent" placeholder="past"></td>
+<td><input type="text" id="iv3-9pp" data-answer="lent" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">let</td>
+<td><input type="text" id="iv3-10p" data-answer="let" placeholder="past"></td>
+<td><input type="text" id="iv3-10pp" data-answer="let" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">lie</td>
+<td><input type="text" id="iv3-11p" data-answer="lay" placeholder="past"></td>
+<td><input type="text" id="iv3-11pp" data-answer="lain" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">lose</td>
+<td><input type="text" id="iv3-12p" data-answer="lost" placeholder="past"></td>
+<td><input type="text" id="iv3-12pp" data-answer="lost" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">make</td>
+<td><input type="text" id="iv3-13p" data-answer="made" placeholder="past"></td>
+<td><input type="text" id="iv3-13pp" data-answer="made" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">mean</td>
+<td><input type="text" id="iv3-14p" data-answer="meant" placeholder="past"></td>
+<td><input type="text" id="iv3-14pp" data-answer="meant" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">meet</td>
+<td><input type="text" id="iv3-15p" data-answer="met" placeholder="past"></td>
+<td><input type="text" id="iv3-15pp" data-answer="met" placeholder="past participle"></td>
+</tr>
+</table>
+<button class="check-btn" onclick="checkExercise('ivex3')">Revisar</button>
+<span class="score"></span>
+<button class="check-btn" style="background:var(--text-muted); margin-left:0.5rem" onclick="resetSection('ivex3')">Reiniciar</button>
+</div><div class="exercise" id="ivex4">
+<h3>Bloque 4 (15 verbos)</h3>
+<table class="drill-table">
+<tr><th>Infinitive</th><th>Simple Past</th><th>Past Participle</th></tr>
+<tr>
+<td class="infinitive">pay</td>
+<td><input type="text" id="iv4-1p" data-answer="paid" placeholder="past"></td>
+<td><input type="text" id="iv4-1pp" data-answer="paid" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">put</td>
+<td><input type="text" id="iv4-2p" data-answer="put" placeholder="past"></td>
+<td><input type="text" id="iv4-2pp" data-answer="put" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">read</td>
+<td><input type="text" id="iv4-3p" data-answer="read" placeholder="past"></td>
+<td><input type="text" id="iv4-3pp" data-answer="read" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">ride</td>
+<td><input type="text" id="iv4-4p" data-answer="rode" placeholder="past"></td>
+<td><input type="text" id="iv4-4pp" data-answer="ridden" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">ring</td>
+<td><input type="text" id="iv4-5p" data-answer="rang" placeholder="past"></td>
+<td><input type="text" id="iv4-5pp" data-answer="rung" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">run</td>
+<td><input type="text" id="iv4-6p" data-answer="ran" placeholder="past"></td>
+<td><input type="text" id="iv4-6pp" data-answer="run" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">say</td>
+<td><input type="text" id="iv4-7p" data-answer="said" placeholder="past"></td>
+<td><input type="text" id="iv4-7pp" data-answer="said" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">see</td>
+<td><input type="text" id="iv4-8p" data-answer="saw" placeholder="past"></td>
+<td><input type="text" id="iv4-8pp" data-answer="seen" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">sell</td>
+<td><input type="text" id="iv4-9p" data-answer="sold" placeholder="past"></td>
+<td><input type="text" id="iv4-9pp" data-answer="sold" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">send</td>
+<td><input type="text" id="iv4-10p" data-answer="sent" placeholder="past"></td>
+<td><input type="text" id="iv4-10pp" data-answer="sent" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">set</td>
+<td><input type="text" id="iv4-11p" data-answer="set" placeholder="past"></td>
+<td><input type="text" id="iv4-11pp" data-answer="set" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">shine</td>
+<td><input type="text" id="iv4-12p" data-answer="shone" placeholder="past"></td>
+<td><input type="text" id="iv4-12pp" data-answer="shone" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">shut</td>
+<td><input type="text" id="iv4-13p" data-answer="shut" placeholder="past"></td>
+<td><input type="text" id="iv4-13pp" data-answer="shut" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">sing</td>
+<td><input type="text" id="iv4-14p" data-answer="sang" placeholder="past"></td>
+<td><input type="text" id="iv4-14pp" data-answer="sung" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">sit</td>
+<td><input type="text" id="iv4-15p" data-answer="sat" placeholder="past"></td>
+<td><input type="text" id="iv4-15pp" data-answer="sat" placeholder="past participle"></td>
+</tr>
+</table>
+<button class="check-btn" onclick="checkExercise('ivex4')">Revisar</button>
+<span class="score"></span>
+<button class="check-btn" style="background:var(--text-muted); margin-left:0.5rem" onclick="resetSection('ivex4')">Reiniciar</button>
+</div><div class="exercise" id="ivex5">
+<h3>Bloque 5 (15 verbos)</h3>
+<table class="drill-table">
+<tr><th>Infinitive</th><th>Simple Past</th><th>Past Participle</th></tr>
+<tr>
+<td class="infinitive">sleep</td>
+<td><input type="text" id="iv5-1p" data-answer="slept" placeholder="past"></td>
+<td><input type="text" id="iv5-1pp" data-answer="slept" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">smell</td>
+<td><input type="text" id="iv5-2p" data-answer="smelled|smelt" placeholder="past"></td>
+<td><input type="text" id="iv5-2pp" data-answer="smelled|smelt" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">speak</td>
+<td><input type="text" id="iv5-3p" data-answer="spoke" placeholder="past"></td>
+<td><input type="text" id="iv5-3pp" data-answer="spoken" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">spend</td>
+<td><input type="text" id="iv5-4p" data-answer="spent" placeholder="past"></td>
+<td><input type="text" id="iv5-4pp" data-answer="spent" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">stand</td>
+<td><input type="text" id="iv5-5p" data-answer="stood" placeholder="past"></td>
+<td><input type="text" id="iv5-5pp" data-answer="stood" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">steal</td>
+<td><input type="text" id="iv5-6p" data-answer="stole" placeholder="past"></td>
+<td><input type="text" id="iv5-6pp" data-answer="stolen" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">swim</td>
+<td><input type="text" id="iv5-7p" data-answer="swam" placeholder="past"></td>
+<td><input type="text" id="iv5-7pp" data-answer="swum" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">take</td>
+<td><input type="text" id="iv5-8p" data-answer="took" placeholder="past"></td>
+<td><input type="text" id="iv5-8pp" data-answer="taken" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">teach</td>
+<td><input type="text" id="iv5-9p" data-answer="taught" placeholder="past"></td>
+<td><input type="text" id="iv5-9pp" data-answer="taught" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">tell</td>
+<td><input type="text" id="iv5-10p" data-answer="told" placeholder="past"></td>
+<td><input type="text" id="iv5-10pp" data-answer="told" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">think</td>
+<td><input type="text" id="iv5-11p" data-answer="thought" placeholder="past"></td>
+<td><input type="text" id="iv5-11pp" data-answer="thought" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">throw</td>
+<td><input type="text" id="iv5-12p" data-answer="threw" placeholder="past"></td>
+<td><input type="text" id="iv5-12pp" data-answer="thrown" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">understand</td>
+<td><input type="text" id="iv5-13p" data-answer="understood" placeholder="past"></td>
+<td><input type="text" id="iv5-13pp" data-answer="understood" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">wake</td>
+<td><input type="text" id="iv5-14p" data-answer="woke" placeholder="past"></td>
+<td><input type="text" id="iv5-14pp" data-answer="woken" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">wear</td>
+<td><input type="text" id="iv5-15p" data-answer="wore" placeholder="past"></td>
+<td><input type="text" id="iv5-15pp" data-answer="worn" placeholder="past participle"></td>
+</tr>
+</table>
+<button class="check-btn" onclick="checkExercise('ivex5')">Revisar</button>
+<span class="score"></span>
+<button class="check-btn" style="background:var(--text-muted); margin-left:0.5rem" onclick="resetSection('ivex5')">Reiniciar</button>
+</div><div class="exercise" id="ivex6">
+<h3>Bloque 6 (2 verbos)</h3>
+<table class="drill-table">
+<tr><th>Infinitive</th><th>Simple Past</th><th>Past Participle</th></tr>
+<tr>
+<td class="infinitive">win</td>
+<td><input type="text" id="iv6-1p" data-answer="won" placeholder="past"></td>
+<td><input type="text" id="iv6-1pp" data-answer="won" placeholder="past participle"></td>
+</tr><tr>
+<td class="infinitive">write</td>
+<td><input type="text" id="iv6-2p" data-answer="wrote" placeholder="past"></td>
+<td><input type="text" id="iv6-2pp" data-answer="written" placeholder="past participle"></td>
+</tr>
+</table>
+<button class="check-btn" onclick="checkExercise('ivex6')">Revisar</button>
+<span class="score"></span>
+<button class="check-btn" style="background:var(--text-muted); margin-left:0.5rem" onclick="resetSection('ivex6')">Reiniciar</button>
+</div>
+
+<div class="ask-teacher">💬 No hace falta memorizar los 77 de una sentada. Haz 1-2 bloques por día de aquí al examen — para el Día 7 (simulacro) ya deberías dominarlos todos.</div>
+
+<p class="source-tag">Tabla completa extraída de American English File 3 (3rd ed.), Student Book p.165.</p>
+
+<div class="nav">
+<a href="0008-vocabulario-flashcards.html">← Vocabulario</a>
+<a href="../index.html">Índice →</a>
+</div>
+
+<script src="../assets/quiz.js"></script>
+</body>
+</html>

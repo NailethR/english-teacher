@@ -12,6 +12,10 @@ Reordenado tras extraer el material real del Workbook y las Vocabulary Banks del
 | 6 | ✅ | Past tenses (simple/continuous/perfect) juntos, used to, comparativos y superlativos | Deportes (SB p.157), Relaciones (SB p.158), verbos irregulares (SB p.165) | Workbook pp.32-35 |
 | 7 | ✅ | Simulacro completo tipo File Test — todos los puntos del temario mezclados | — | Formato real de los 5 File Tests ya rendidos |
 
+## Recursos extra (no atados a un día — usar en paralelo)
+- `lessons/0008-vocabulario-flashcards.html`: flashcards + quiz de opción múltiple para las 4 Vocabulary Banks. Memorización activa, complementa los ejercicios de completar espacios.
+- `lessons/0009-irregular-verbs-drill.html`: los 77 verbos irregulares de la p.165 en flashcards, mini-quiz y tabla completa dividida en 6 bloques de práctica. Hacer 1-2 bloques por día.
+
 ## Reglas del plan
 - Cada sesión corrige SIEMPRE explicando en español, con regla + ejemplo correcto (preferencia fija del usuario).
 - Si en un día aparece un error de base (A1), se resuelve ahí mismo antes de seguir, y se registra en `learning-records/`.
