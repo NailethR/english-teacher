@@ -13,6 +13,7 @@ Workspace de estudio construido con la skill `/mattpocock-skills:teach`. Ver [MI
 - `assets/` — CSS y JS compartidos por todas las lecciones.
 
 ## Cómo estudiar cada día
+0. Abre `index.html` para ver el mapa completo de los 7 días y las referencias rápidas.
 1. Abre la lección del día en el navegador (doble clic al `.html`, o `open lessons/000N-*.html` en terminal).
 2. Lee la explicación corta, resuelve los ejercicios, pulsa "Revisar".
 3. Cuando algo no calce, pregúntale a Claude Code en esta misma carpeta — es tu profesor y corrige explicando siempre en español.
