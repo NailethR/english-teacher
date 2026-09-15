@@ -1,0 +1,209 @@
+/* Hoja de estilo compartida — Inglés B1 workspace */
+/* Tipografía tipo Tufte: serif para lectura, mono para ejemplos en inglés */
+
+:root {
+  --bg: #fdfbf7;
+  --bg-card: #ffffff;
+  --text: #1f1c18;
+  --text-muted: #6b6459;
+  --accent: #a5372b;      /* rojo apagado — para marcar temas/errores */
+  --accent-soft: #f3e4df;
+  --ok: #2f6b3a;
+  --ok-soft: #e5f0e3;
+  --bad: #a5372b;
+  --bad-soft: #fbe9e6;
+  --border: #e4ddd0;
+  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --mono: "SF Mono", "Menlo", Consolas, monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #161412;
+    --bg-card: #1f1c19;
+    --text: #ece6db;
+    --text-muted: #a39a8a;
+    --accent: #e07a63;
+    --accent-soft: #3a2420;
+    --ok: #7fbf8a;
+    --ok-soft: #1f2e20;
+    --bad: #e07a63;
+    --bad-soft: #3a2320;
+    --border: #33302a;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--serif);
+  font-size: 18px;
+  line-height: 1.55;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 6rem;
+}
+
+h1 {
+  font-size: 1.9rem;
+  margin-bottom: 0.2rem;
+}
+
+h1 .unit-tag {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  vertical-align: middle;
+  margin-right: 0.6rem;
+}
+
+.subtitle {
+  color: var(--text-muted);
+  font-size: 1rem;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+  border-bottom: 2px solid var(--border);
+  padding-bottom: 0.3rem;
+  margin-top: 2.8rem;
+}
+
+h3 {
+  font-size: 1.05rem;
+  color: var(--accent);
+  margin-top: 1.8rem;
+}
+
+p, li { max-width: 68ch; }
+
+.en {
+  font-family: var(--mono);
+  background: var(--accent-soft);
+  padding: 0.05rem 0.3rem;
+  border-radius: 3px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1rem 0;
+  font-size: 0.95rem;
+}
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.4rem 0.6rem;
+  text-align: left;
+}
+th { background: var(--accent-soft); }
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.2rem 1.4rem;
+  margin: 1.2rem 0;
+}
+
+.rule {
+  border-left: 4px solid var(--accent);
+  padding-left: 1rem;
+  margin: 1rem 0;
+}
+
+.exercise {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.2rem 1.4rem;
+  margin: 1.5rem 0;
+}
+.exercise h3 { margin-top: 0; }
+.exercise ol { padding-left: 1.3rem; }
+.exercise li { margin-bottom: 0.9rem; }
+
+.exercise input[type="text"] {
+  font-family: var(--mono);
+  font-size: 0.95rem;
+  border: 1px solid var(--border);
+  border-bottom: 2px solid var(--text-muted);
+  background: var(--bg);
+  color: var(--text);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  min-width: 8rem;
+}
+.exercise input[type="text"].correct {
+  border-color: var(--ok);
+  background: var(--ok-soft);
+}
+.exercise input[type="text"].incorrect {
+  border-color: var(--bad);
+  background: var(--bad-soft);
+}
+
+.explain {
+  display: none;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-top: 0.2rem;
+  padding-left: 0.2rem;
+  border-left: 3px solid var(--border);
+  padding-left: 0.6rem;
+}
+.explain.show { display: block; }
+.explain.show.wrong { color: var(--bad); border-color: var(--bad); }
+.explain.show.right { color: var(--ok); border-color: var(--ok); }
+
+button.check-btn {
+  font-family: var(--serif);
+  font-size: 0.95rem;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1.1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 0.6rem;
+}
+button.check-btn:hover { opacity: 0.9; }
+
+.score {
+  font-family: var(--mono);
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-left: 0.8rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.9rem;
+}
+.nav a { color: var(--accent); text-decoration: none; }
+.nav a:hover { text-decoration: underline; }
+
+.ask-teacher {
+  background: var(--accent-soft);
+  border-radius: 8px;
+  padding: 1rem 1.2rem;
+  margin-top: 3rem;
+  font-size: 0.95rem;
+}
+
+.source-tag {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
