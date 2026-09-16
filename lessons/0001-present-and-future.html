@@ -18,36 +18,68 @@
 <div class="rule">
 <p><strong>Simple Present</strong> = rutina, hábito, hecho general (verbos como <span class="en">work, live, hate, like, need</span> casi siempre van aquí porque describen estados, no acciones en curso).<br>
 <strong>Present Continuous</strong> = está pasando ahora mismo, o ya quedaron/planearon algo para el futuro cercano.</p>
-<p>Ojo con los verbos de estado (<span class="en">think, love, hate, want, need, know, prefer</span>): casi nunca llevan <span class="en">-ing</span> aunque la frase "suene" a que está pasando ahora. <span class="en">I prefer home-cooked food</span> (NO "I'm preferring").</p>
+</div>
+
+<p>Igual que en el libro (File Test 1): elige la opción correcta entre las dos que se muestran.</p>
+
+<div id="mc1">
+<div class="mc-question" data-correct="is taking">
+<p>1. Jake ______ vitamins every day.</p>
+<div class="mc-options">
+<button onclick="selectOption(this, this.closest('.mc-question'))">is taking</button>
+<button onclick="selectOption(this, this.closest('.mc-question'))">takes</button>
+</div>
+<div class="mc-feedback" data-rule="&quot;every day&quot; es rutina → Simple Present (takes)."></div>
+</div>
+<div class="mc-question" data-correct="I prefer">
+<p>2. Clare gets takeout all the time, but ______ home-cooked food.</p>
+<div class="mc-options">
+<button onclick="selectOption(this, this.closest('.mc-question'))">I prefer</button>
+<button onclick="selectOption(this, this.closest('.mc-question'))">I'm preferring</button>
+</div>
+<div class="mc-feedback" data-rule="&quot;prefer&quot; es verbo de estado: nunca lleva -ing."></div>
+</div>
+<div class="mc-question" data-correct="Are you watching">
+<p>3. ______ the soccer game tomorrow night?</p>
+<div class="mc-options">
+<button onclick="selectOption(this, this.closest('.mc-question'))">Do you watch</button>
+<button onclick="selectOption(this, this.closest('.mc-question'))">Are you watching</button>
+</div>
+<div class="mc-feedback" data-rule="&quot;tomorrow night&quot; + plan ya decidido → Present Continuous con valor de futuro."></div>
+</div>
+<div class="mc-question" data-correct="I don't usually eat">
+<p>4. ______ frozen food, but tonight I don't have time to cook.</p>
+<div class="mc-options">
+<button onclick="selectOption(this, this.closest('.mc-question'))">I don't usually eat</button>
+<button onclick="selectOption(this, this.closest('.mc-question'))">I'm not usually eating</button>
+</div>
+<div class="mc-feedback" data-rule="&quot;usually&quot; marca rutina → Simple Present."></div>
+</div>
+<div class="mc-question" data-correct="isn't working">
+<p>5. Emi ______ tomorrow, so we're meeting for lunch.</p>
+<div class="mc-options">
+<button onclick="selectOption(this, this.closest('.mc-question'))">doesn't work</button>
+<button onclick="selectOption(this, this.closest('.mc-question'))">isn't working</button>
+</div>
+<div class="mc-feedback" data-rule="&quot;tomorrow&quot; + arreglo específico de esa persona → Present Continuous."></div>
+</div>
+<div class="mc-question" data-correct="we often bike">
+<p>6. In the summer, ______ to work.</p>
+<div class="mc-options">
+<button onclick="selectOption(this, this.closest('.mc-question'))">we often bike</button>
+<button onclick="selectOption(this, this.closest('.mc-question'))">we're often biking</button>
+</div>
+<div class="mc-feedback" data-rule="&quot;often&quot; = frecuencia habitual → Simple Present."></div>
+</div>
 </div>
 
 <div class="exercise" id="ex1">
-<h3>Ejercicio A — Elige la forma correcta</h3>
+<h3>Ejercicio A — ahora sin las dos opciones (como en el examen real)</h3>
 <ol>
-<li>Jake <input type="text" id="ex1-1" data-answer="is taking" placeholder="verbo"> vitamins every day.
-  <div class="explain" data-for="ex1-1" data-rule="&quot;every day&quot; es rutina → Simple Present."></div>
-</li>
-<li>Clare gets takeout all the time, but I <input type="text" id="ex1-2" data-answer="prefer" placeholder="verbo"> home-cooked food.
-  <div class="explain" data-for="ex1-2" data-rule="&quot;prefer&quot; es verbo de estado: nunca lleva -ing."></div>
-</li>
-<li><input type="text" id="ex1-3" data-answer="are you watching" placeholder="verbo"> the soccer game tomorrow night?
-  <div class="explain" data-for="ex1-3" data-rule="&quot;tomorrow night&quot; + plan ya decidido → Present Continuous con valor de futuro."></div>
-</li>
-<li>I <input type="text" id="ex1-4" data-answer="don't usually eat" placeholder="verbo"> frozen food, but tonight I don't have time to cook.
-  <div class="explain" data-for="ex1-4" data-rule="&quot;usually&quot; marca rutina → Simple Present."></div>
-</li>
-<li>Emi <input type="text" id="ex1-5" data-answer="isn't working" placeholder="verbo"> tomorrow, so we're meeting for lunch.
-  <div class="explain" data-for="ex1-5" data-rule="&quot;tomorrow&quot; + arreglo específico de esa persona → Present Continuous."></div>
-</li>
-<li>In the summer, we often <input type="text" id="ex1-6" data-answer="bike" placeholder="verbo"> to work.
-  <div class="explain" data-for="ex1-6" data-rule="&quot;often&quot; = frecuencia habitual → Simple Present."></div>
-</li>
-<li>Sorry, I can't talk right now. I <input type="text" id="ex1-7" data-answer="am driving|'m driving" placeholder="verbo">.
-  <div class="explain" data-for="ex1-7" data-rule="Está pasando en este instante → Present Continuous."></div>
-</li>
-<li>We hardly ever <input type="text" id="ex1-8" data-answer="eat" placeholder="verbo"> together as a family.
-  <div class="explain" data-for="ex1-8" data-rule="&quot;hardly ever&quot; es adverbio de frecuencia → Simple Present."></div>
-</li>
+<li>Sorry, I can't talk right now. I <input type="text" id="ex1-1" data-answer="am driving|'m driving" placeholder="drive"> (drive).
+<div class="explain" data-for="ex1-1" data-rule="Está pasando en este instante → Present Continuous."></div></li>
+<li>We hardly ever <input type="text" id="ex1-2" data-answer="eat" placeholder="eat"> (eat) together as a family.
+<div class="explain" data-for="ex1-2" data-rule="&quot;hardly ever&quot; es adverbio de frecuencia → Simple Present."></div></li>
 </ol>
 <button class="check-btn" onclick="checkExercise('ex1')">Revisar</button>
 <span class="score"></span>
@@ -61,64 +93,50 @@
 </div>
 
 <div class="exercise" id="ex2">
-<h3>Ejercicio B — Completa con la forma correcta</h3>
+<h3>Ejercicio B — Completa con la forma correcta del verbo entre paréntesis</h3>
 <ol>
-<li>A: I <input type="text" id="ex2-1" data-answer="'m going to go|am going to go" placeholder="verbo"> into town this afternoon. (ya lo decidió antes de hablar)
-  <div class="explain" data-for="ex2-1" data-rule="Intención ya planeada → going to."></div>
-</li>
-<li>A: OK, I <input type="text" id="ex2-2" data-answer="'ll get|will get" placeholder="verbo"> some eggs too, then. (lo decide en el momento, mientras habla)
-  <div class="explain" data-for="ex2-2" data-rule="Decisión espontánea en el momento de hablar → will."></div>
-</li>
-<li>I heard on the radio that the weather <input type="text" id="ex2-3" data-answer="will be" placeholder="verbo"> nice this weekend. (predicción sin evidencia directa, es lo que dijo la radio)
-  <div class="explain" data-for="ex2-3" data-rule="Predicción basada en lo que oíste, no en algo que ves ahora → will."></div>
-</li>
-<li>Look at that sky! It <input type="text" id="ex2-4" data-answer="'s going to rain|is going to rain" placeholder="verbo"> .
-  <div class="explain" data-for="ex2-4" data-rule="Evidencia visible AHORA (el cielo) → going to."></div>
-</li>
-<li>A: We <input type="text" id="ex2-5" data-answer="'re meeting|are meeting" placeholder="verbo"> Bob outside the movie theater at 7:30. (ya está arreglado con Bob)
-  <div class="explain" data-for="ex2-5" data-rule="Plan con hora y persona ya arreglados → Present Continuous."></div>
-</li>
-<li>I'm sure Kwame <input type="text" id="ex2-6" data-answer="will help|'ll help" placeholder="verbo"> you with your work.
-  <div class="explain" data-for="ex2-6" data-rule="&quot;I'm sure&quot; = predicción/opinión sin evidencia concreta → will."></div>
-</li>
-<li>Pablo <input type="text" id="ex2-7" data-answer="is buying|'s buying|is going to buy" placeholder="verbo"> a new car next week. (ya lo tenía decidido)
-  <div class="explain" data-for="ex2-7" data-rule="Intención ya decidida de antemano → going to (o Present Continuous si ya está arreglado, ej. ya eligió el auto)."></div>
-</li>
+<li>A: I ______ (go) into town this afternoon. (ya lo decidió antes de hablar) → <input type="text" id="ex2-1" data-answer="'m going to go|am going to go" placeholder="completa">
+<div class="explain" data-for="ex2-1" data-rule="Intención ya planeada → going to."></div></li>
+<li>A: OK, I ______ (get) some eggs too, then. (lo decide en el momento, mientras habla) → <input type="text" id="ex2-2" data-answer="'ll get|will get" placeholder="completa">
+<div class="explain" data-for="ex2-2" data-rule="Decisión espontánea en el momento de hablar → will."></div></li>
+<li>I heard on the radio that the weather ______ (be) nice this weekend. (predicción sin evidencia directa, es lo que dijo la radio) → <input type="text" id="ex2-3" data-answer="will be" placeholder="completa">
+<div class="explain" data-for="ex2-3" data-rule="Predicción basada en lo que oíste, no en algo que ves ahora → will."></div></li>
+<li>Look at that sky! It ______ (rain). → <input type="text" id="ex2-4" data-answer="'s going to rain|is going to rain" placeholder="completa">
+<div class="explain" data-for="ex2-4" data-rule="Evidencia visible AHORA (el cielo) → going to."></div></li>
+<li>A: We ______ (meet) Bob outside the movie theater at 7:30. (ya está arreglado con Bob) → <input type="text" id="ex2-5" data-answer="'re meeting|are meeting" placeholder="completa">
+<div class="explain" data-for="ex2-5" data-rule="Plan con hora y persona ya arreglados → Present Continuous."></div></li>
+<li>I'm sure Kwame ______ (help) you with your work. → <input type="text" id="ex2-6" data-answer="will help|'ll help" placeholder="completa">
+<div class="explain" data-for="ex2-6" data-rule="&quot;I'm sure&quot; = predicción/opinión sin evidencia concreta → will."></div></li>
+<li>Pablo ______ (buy) a new car next week. (ya lo tenía decidido) → <input type="text" id="ex2-7" data-answer="is buying|'s buying|is going to buy" placeholder="completa">
+<div class="explain" data-for="ex2-7" data-rule="Intención ya decidida de antemano → going to (o Present Continuous si ya está arreglado, ej. ya eligió el auto)."></div></li>
 </ol>
 <button class="check-btn" onclick="checkExercise('ex2')">Revisar</button>
 <span class="score"></span>
 </div>
 
 <h2>3. Vocabulario: personalidad (SB p.153)</h2>
-<p>Del Workbook p.7 — adjetivos de personalidad. Escribe el adjetivo que describe cada comentario.</p>
+<p>Del Workbook p.7 — elige el adjetivo de esta lista para cada comentario (igual que en el libro, con el banco de palabras visible):</p>
+<p class="en" style="font-size:0.85rem">ambitious · anxious · honest · independent · insecure · patient · rebellious · self-confident · selfish · sensible · spoiled · stubborn</p>
 
 <div class="exercise" id="ex3">
 <h3>Ejercicio C — ¿Qué adjetivo describe a esta persona?</h3>
 <ol>
-<li>"When I want something, my parents always give it to me." → <input type="text" id="ex3-1" data-answer="spoiled" placeholder="adjetivo">
-  <div class="explain" data-for="ex3-1" data-rule="Le dan todo lo que pide → spoiled (consentido/malcriado)."></div>
-</li>
-<li>"I find it very hard to relax. I lie awake at night worrying about things." → <input type="text" id="ex3-2" data-answer="anxious" placeholder="adjetivo">
-  <div class="explain" data-for="ex3-2" data-rule="Se preocupa y no puede relajarse → anxious (ansioso)."></div>
-</li>
-<li>"That's what I think, and I'm not going to change my mind." → <input type="text" id="ex3-3" data-answer="stubborn" placeholder="adjetivo">
-  <div class="explain" data-for="ex3-3" data-rule="No cambia de opinión → stubborn (terco)."></div>
-</li>
-<li>"I'd prefer to do this on my own, thanks." → <input type="text" id="ex3-4" data-answer="independent" placeholder="adjetivo">
-  <div class="explain" data-for="ex3-4" data-rule="Prefiere hacer las cosas solo → independent."></div>
-</li>
-<li>"I'd like to be the manager of a big multinational company." → <input type="text" id="ex3-5" data-answer="ambitious" placeholder="adjetivo">
-  <div class="explain" data-for="ex3-5" data-rule="Quiere llegar lejos profesionalmente → ambitious (ambicioso)."></div>
-</li>
-<li>"I feel very comfortable when I'm speaking in public." → <input type="text" id="ex3-6" data-answer="self-confident" placeholder="adjetivo">
-  <div class="explain" data-for="ex3-6" data-rule="Se siente cómodo/seguro hablando en público → self-confident."></div>
-</li>
-<li>"Take your time, I can wait. I'm not in a hurry." → <input type="text" id="ex3-7" data-answer="patient" placeholder="adjetivo">
-  <div class="explain" data-for="ex3-7" data-rule="Puede esperar sin molestarse → patient (paciente)."></div>
-</li>
-<li>"I'm not sure if Jess is my friend or not. She says she is, but I don't really know." → <input type="text" id="ex3-8" data-answer="insecure" placeholder="adjetivo">
-  <div class="explain" data-for="ex3-8" data-rule="Duda e inseguridad sobre la relación → insecure."></div>
-</li>
+<li>"When I want something, my parents always give it to me." → <input type="text" id="ex3-1" data-answer="spoiled" placeholder="adjetivo de la lista">
+<div class="explain" data-for="ex3-1" data-rule="Le dan todo lo que pide → spoiled (consentido/malcriado)."></div></li>
+<li>"I find it very hard to relax. I lie awake at night worrying about things." → <input type="text" id="ex3-2" data-answer="anxious" placeholder="adjetivo de la lista">
+<div class="explain" data-for="ex3-2" data-rule="Se preocupa y no puede relajarse → anxious (ansioso)."></div></li>
+<li>"That's what I think, and I'm not going to change my mind." → <input type="text" id="ex3-3" data-answer="stubborn" placeholder="adjetivo de la lista">
+<div class="explain" data-for="ex3-3" data-rule="No cambia de opinión → stubborn (terco)."></div></li>
+<li>"I'd prefer to do this on my own, thanks." → <input type="text" id="ex3-4" data-answer="independent" placeholder="adjetivo de la lista">
+<div class="explain" data-for="ex3-4" data-rule="Prefiere hacer las cosas solo → independent."></div></li>
+<li>"I'd like to be the manager of a big multinational company." → <input type="text" id="ex3-5" data-answer="ambitious" placeholder="adjetivo de la lista">
+<div class="explain" data-for="ex3-5" data-rule="Quiere llegar lejos profesionalmente → ambitious (ambicioso)."></div></li>
+<li>"I feel very comfortable when I'm speaking in public." → <input type="text" id="ex3-6" data-answer="self-confident" placeholder="adjetivo de la lista">
+<div class="explain" data-for="ex3-6" data-rule="Se siente cómodo/seguro hablando en público → self-confident."></div></li>
+<li>"Take your time, I can wait. I'm not in a hurry." → <input type="text" id="ex3-7" data-answer="patient" placeholder="adjetivo de la lista">
+<div class="explain" data-for="ex3-7" data-rule="Puede esperar sin molestarse → patient (paciente)."></div></li>
+<li>"I'm not sure if Jess is my friend or not. She says she is, but I don't really know." → <input type="text" id="ex3-8" data-answer="insecure" placeholder="adjetivo de la lista">
+<div class="explain" data-for="ex3-8" data-rule="Duda e inseguridad sobre la relación → insecure."></div></li>
 </ol>
 <button class="check-btn" onclick="checkExercise('ex3')">Revisar</button>
 <span class="score"></span>
