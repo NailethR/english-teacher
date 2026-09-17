@@ -17,47 +17,64 @@
 <h2>1. Obligación y prohibición</h2>
 <p>Repasa la <a href="../reference/0002-modals.html">tabla de referencia</a> antes de empezar. Recuerda: <span class="en">must not</span> ≠ <span class="en">don't have to</span>.</p>
 
-<div class="exercise" id="ex1">
-<h3>Ejercicio A — must, must not, should o shouldn't</h3>
-<p class="en" style="font-size:0.85rem">Lista: must · must not · should · shouldn't</p>
-<ol>
-<li>Adam <input type="text" id="ex1-1" data-answer="must" placeholder="modal"> graduate from high school or he won't be able to go to college.
-<div class="explain" data-for="ex1-1" data-rule="Obligación necesaria y fuerte → must."></div></li>
-<li>I think you <input type="text" id="ex1-2" data-answer="should" placeholder="modal"> buy the blue dress, not the red one. It suits you better.
-<div class="explain" data-for="ex1-2" data-rule="Es un consejo, no una obligación → should."></div></li>
-<li>You <input type="text" id="ex1-3" data-answer="must not" placeholder="modal"> take phones into the exam room.
-<div class="explain" data-for="ex1-3" data-rule="Prohibición (una regla del examen) → must not."></div></li>
-<li>You <input type="text" id="ex1-4" data-answer="shouldn't" placeholder="modal"> eat so much junk food. It isn't good for you.
-<div class="explain" data-for="ex1-4" data-rule="Consejo negativo, no prohibición legal → shouldn't."></div></li>
-<li>You <input type="text" id="ex1-5" data-answer="must" placeholder="modal"> be quiet when you're in the library.
-<div class="explain" data-for="ex1-5" data-rule="Regla/obligación fuerte del lugar → must."></div></li>
-<li>I know I <input type="text" id="ex1-6" data-answer="shouldn't" placeholder="modal"> go out tonight, but I really want to go to the concert.
-<div class="explain" data-for="ex1-6" data-rule="Reconoce que no es lo recomendable, pero no es una prohibición legal → shouldn't."></div></li>
-</ol>
-<button class="check-btn" onclick="checkExercise('ex1')">Revisar</button>
-<span class="score"></span>
+<div class="exercise" id="ex2">
+<h3>Ejercicio A — Elige la forma correcta (Workbook p.27, ejercicio 2a completo)</h3>
+<div id="mc-2a">
+<div class="mc-question" data-correct="have to"><p>1. You ______ have a visa to enter the US.</p>
+<div class="mc-options"><button onclick="selectOption(this, this.closest('.mc-question'))">have to</button><button onclick="selectOption(this, this.closest('.mc-question'))">must</button></div>
+<div class="mc-feedback" data-rule="Ambas son correctas en realidad (el libro marca esta como &quot;both correct&quot;), pero have to suena más natural para un requisito externo."></div></div>
+<div class="mc-question" data-correct="must not"><p>2. You ______ drive on the left! Here we drive on the right!</p>
+<div class="mc-options"><button onclick="selectOption(this, this.closest('.mc-question'))">must not</button><button onclick="selectOption(this, this.closest('.mc-question'))">don't have to</button></div>
+<div class="mc-feedback" data-rule="Prohibición real (manejar por la izquierda causaría un choque) → must not."></div></div>
+<div class="mc-question" data-correct="don't have to"><p>3. You ______ pay to visit most museums. Entrance is usually free.</p>
+<div class="mc-options"><button onclick="selectOption(this, this.closest('.mc-question'))">must not</button><button onclick="selectOption(this, this.closest('.mc-question'))">don't have to</button></div>
+<div class="mc-feedback" data-rule="Opcional, no prohibido → don't have to."></div></div>
+<div class="mc-question" data-correct="have to"><p>4. You ______ visit the Statue of Liberty. It's very impressive.</p>
+<div class="mc-options"><button onclick="selectOption(this, this.closest('.mc-question'))">have to</button><button onclick="selectOption(this, this.closest('.mc-question'))">must</button></div>
+<div class="mc-feedback" data-rule="Ambas correctas — recomendación fuerte tipo &quot;debes verlo&quot;."></div></div>
+<div class="mc-question" data-correct="must not"><p>5. You ______ smoke in any public building. It is prohibited by law.</p>
+<div class="mc-options"><button onclick="selectOption(this, this.closest('.mc-question'))">must not</button><button onclick="selectOption(this, this.closest('.mc-question'))">don't have to</button></div>
+<div class="mc-feedback" data-rule="&quot;prohibited by law&quot; → must not."></div></div>
+<div class="mc-question" data-correct="have to"><p>6. You ______ wear a seat belt at all times in a car.</p>
+<div class="mc-options"><button onclick="selectOption(this, this.closest('.mc-question'))">have to</button><button onclick="selectOption(this, this.closest('.mc-question'))">must</button></div>
+<div class="mc-feedback" data-rule="Ambas correctas — ley de tránsito."></div></div>
+<div class="mc-question" data-correct="don't have to"><p>7. You ______ go everywhere by subway. You can take the bus.</p>
+<div class="mc-options"><button onclick="selectOption(this, this.closest('.mc-question'))">must not</button><button onclick="selectOption(this, this.closest('.mc-question'))">don't have to</button></div>
+<div class="mc-feedback" data-rule="Hay otra opción (el bus) → opcional, no prohibido → don't have to."></div></div>
+<div class="mc-question" data-correct="have to"><p>8. You ______ answer some questions when you go through immigration.</p>
+<div class="mc-options"><button onclick="selectOption(this, this.closest('.mc-question'))">have to</button><button onclick="selectOption(this, this.closest('.mc-question'))">must</button></div>
+<div class="mc-feedback" data-rule="Ambas correctas — requisito del proceso migratorio."></div></div>
+</div>
+<button class="check-btn" onclick="resetSection('mc-2a')">Repetir</button>
 </div>
 
-<div class="exercise" id="ex2">
-<h3>Ejercicio B — have to / don't have to / must not (obligación externa vs. prohibición)</h3>
-<p class="en" style="font-size:0.85rem">Lista: have to · don't have to · must not</p>
+<div class="exercise" id="ex2b">
+<h3>Ejercicio B — must, must not, should o shouldn't (Workbook p.27, ejercicio 2b completo)</h3>
 <ol>
-<li>You <input type="text" id="ex2-1" data-answer="have to" placeholder="modal"> have a visa to enter the US. (es un requisito legal externo)
-<div class="explain" data-for="ex2-1" data-rule="Requisito impuesto por el sistema (no opinión del hablante) → have to."></div></li>
-<li>You <input type="text" id="ex2-2" data-answer="don't have to" placeholder="modal"> pay to visit most museums. Entrance is usually free.
-<div class="explain" data-for="ex2-2" data-rule="No es obligatorio, es opcional (es gratis) → don't have to (NO must not, porque sí se PUEDE pagar si quisieras)."></div></li>
-<li>You <input type="text" id="ex2-3" data-answer="must not" placeholder="modal"> smoke in any public building. It is prohibited by law.
-<div class="explain" data-for="ex2-3" data-rule="&quot;prohibited by law&quot; = está prohibido, no es opcional → must not."></div></li>
-<li>You <input type="text" id="ex2-4" data-answer="don't have to" placeholder="modal"> go everywhere by subway. You can take the bus.
-<div class="explain" data-for="ex2-4" data-rule="Hay otra opción (el bus) → no es obligatorio, es opcional → don't have to."></div></li>
+<li>Adam <input type="text" id="ex2b-1" data-answer="must" placeholder="modal"> graduate from high school or he won't be able to go to college.
+<div class="explain" data-for="ex2b-1" data-rule="Obligación necesaria → must."></div></li>
+<li>I think you <input type="text" id="ex2b-2" data-answer="should" placeholder="modal"> buy the blue dress, not the red one.
+<div class="explain" data-for="ex2b-2" data-rule="Consejo → should."></div></li>
+<li>You <input type="text" id="ex2b-3" data-answer="must not" placeholder="modal"> take phones into the exam room.
+<div class="explain" data-for="ex2b-3" data-rule="Prohibición → must not."></div></li>
+<li>You <input type="text" id="ex2b-4" data-answer="shouldn't" placeholder="modal"> eat so much junk food. It isn't good for you.
+<div class="explain" data-for="ex2b-4" data-rule="Consejo negativo → shouldn't."></div></li>
+<li>You <input type="text" id="ex2b-5" data-answer="must" placeholder="modal"> be quiet when you're in the library.
+<div class="explain" data-for="ex2b-5" data-rule="Regla del lugar → must."></div></li>
+<li>Who do you think we <input type="text" id="ex2b-6" data-answer="should" placeholder="modal"> invite to the party?
+<div class="explain" data-for="ex2b-6" data-rule="Pedir consejo/opinión → should."></div></li>
+<li>I know I <input type="text" id="ex2b-7" data-answer="shouldn't" placeholder="modal"> go out tonight, but I really want to go to the concert.
+<div class="explain" data-for="ex2b-7" data-rule="Reconoce que no es lo recomendable → shouldn't."></div></li>
+<li>I <input type="text" id="ex2b-8" data-answer="must not" placeholder="modal"> forget to call my sister back. She left me a message this morning.
+<div class="explain" data-for="ex2b-8" data-rule="Obligación personal fuerte (no olvidar) → must not (forget)."></div></li>
 </ol>
-<button class="check-btn" onclick="checkExercise('ex2')">Revisar</button>
+<button class="check-btn" onclick="checkExercise('ex2b')">Revisar</button>
 <span class="score"></span>
 </div>
 
 <h2>2. Habilidad: can / could / was able to</h2>
 <div class="exercise" id="ex3">
-<h3>Ejercicio C — Elige la forma correcta (dos opciones, como en el libro)</h3>
+<h3>Ejercicio C — Elige la forma correcta (Workbook p.29, ejercicio 1a completo — 12 ítems)</h3>
 <div id="mc-ability">
 <div class="mc-question" data-correct="can">
 <p>1. She ______ swim really well because she used to live by the ocean.</p>
@@ -65,7 +82,7 @@
 <button onclick="selectOption(this, this.closest('.mc-question'))">can</button>
 <button onclick="selectOption(this, this.closest('.mc-question'))">is able to</button>
 </div>
-<div class="mc-feedback" data-rule="Habilidad en presente → can (más natural aquí, aunque ambas son gramaticalmente correctas)."></div>
+<div class="mc-feedback" data-rule="Ambas son correctas en realidad (el libro las marca así); can es la más natural aquí."></div>
 </div>
 <div class="mc-question" data-correct="be able to">
 <p>2. You need to ______ drive to live in the country.</p>
@@ -83,24 +100,103 @@
 </div>
 <div class="mc-feedback" data-rule="Habilidad general en el pasado (no un logro puntual) → could."></div>
 </div>
+<div class="mc-question" data-correct="can">
+<p>4. If it doesn't rain tomorrow, ______ go for a long walk.</p>
+<div class="mc-options">
+<button onclick="selectOption(this, this.closest('.mc-question'))">we can</button>
+<button onclick="selectOption(this, this.closest('.mc-question'))">we'll be able to</button>
+</div>
+<div class="mc-feedback" data-rule="Ambas correctas en este condicional; &quot;we can&quot; es la más natural."></div>
+</div>
+<div class="mc-question" data-correct="haven't been able to">
+<p>5. Sorry, I've been so busy that I ______ call until now.</p>
+<div class="mc-options">
+<button onclick="selectOption(this, this.closest('.mc-question'))">haven't could</button>
+<button onclick="selectOption(this, this.closest('.mc-question'))">haven't been able to</button>
+</div>
+<div class="mc-feedback" data-rule="&quot;could&quot; no tiene forma de Present Perfect — se usa &quot;been able to&quot;."></div>
+</div>
+<div class="mc-question" data-correct="could">
+<p>6. If Mai-ting had a less demanding job, she ______ enjoy life more.</p>
+<div class="mc-options">
+<button onclick="selectOption(this, this.closest('.mc-question'))">could</button>
+<button onclick="selectOption(this, this.closest('.mc-question'))">would be able to</button>
+</div>
+<div class="mc-feedback" data-rule="Ambas correctas en este condicional hipotético."></div>
+</div>
+<div class="mc-question" data-correct="been able to">
+<p>7. I've never ______ dance well, but I'd love to learn.</p>
+<div class="mc-options">
+<button onclick="selectOption(this, this.closest('.mc-question'))">could</button>
+<button onclick="selectOption(this, this.closest('.mc-question'))">been able to</button>
+</div>
+<div class="mc-feedback" data-rule="&quot;could&quot; no tiene forma de Present Perfect → been able to."></div>
+</div>
 <div class="mc-question" data-correct="weren't able to">
-<p>4. We're really sorry we ______ come to your wedding.</p>
+<p>8. We're really sorry we ______ come to your wedding.</p>
 <div class="mc-options">
 <button onclick="selectOption(this, this.closest('.mc-question'))">weren't able to</button>
 <button onclick="selectOption(this, this.closest('.mc-question'))">couldn't</button>
 </div>
-<div class="mc-feedback" data-rule="En negativo, couldn&#39;t también es válido para un evento puntual — a diferencia del afirmativo, aquí ambas formas funcionan."></div>
+<div class="mc-feedback" data-rule="Ambas correctas — negativo puntual en pasado, aquí sí funciona &quot;couldn&#39;t&quot;."></div>
 </div>
 <div class="mc-question" data-correct="be able to">
-<p>5. I used to ______ speak a little Arabic, but I've forgotten most of it now.</p>
+<p>9. I used to ______ speak a little Arabic, but I've forgotten most of it now.</p>
 <div class="mc-options">
 <button onclick="selectOption(this, this.closest('.mc-question'))">can</button>
 <button onclick="selectOption(this, this.closest('.mc-question'))">be able to</button>
 </div>
 <div class="mc-feedback" data-rule="Después de &quot;used to&quot; necesitas infinitivo → be able to (no &quot;can&quot;)."></div>
 </div>
+<div class="mc-question" data-correct="Will you be able to">
+<p>10. ______ pick me up at the train station when I arrive?</p>
+<div class="mc-options">
+<button onclick="selectOption(this, this.closest('.mc-question'))">Can you</button>
+<button onclick="selectOption(this, this.closest('.mc-question'))">Will you be able to</button>
+</div>
+<div class="mc-feedback" data-rule="Ambas correctas — pregunta sobre el futuro."></div>
+</div>
+<div class="mc-question" data-correct="must be able to">
+<p>11. To work for this company, you ______ speak at least three languages.</p>
+<div class="mc-options">
+<button onclick="selectOption(this, this.closest('.mc-question'))">must can</button>
+<button onclick="selectOption(this, this.closest('.mc-question'))">must be able to</button>
+</div>
+<div class="mc-feedback" data-rule="Dos modales nunca van juntos (&quot;must can&quot; no existe) → must be able to."></div>
+</div>
+<div class="mc-question" data-correct="not being able to">
+<p>12. I hate ______ communicate with the local people when I'm traveling.</p>
+<div class="mc-options">
+<button onclick="selectOption(this, this.closest('.mc-question'))">not can</button>
+<button onclick="selectOption(this, this.closest('.mc-question'))">not being able to</button>
+</div>
+<div class="mc-feedback" data-rule="Después de &quot;hate&quot; se necesita gerundio → not being able to."></div>
+</div>
 </div>
 <button class="check-btn" onclick="resetSection('mc-ability')">Repetir</button>
+
+<div class="exercise" id="ex3b">
+<h3>Ejercicio C2 — El currículum de Tyler (Workbook p.29, ejercicio 1b)</h3>
+<p style="font-size:0.9rem">Tyler Ruiz: francés fluido desde 2008, chino básico desde que trabajó en Hong Kong, nunca estudió alemán, diseña sitios web desde 2004, no terminó su doctorado, quiere aprender ruso.</p>
+<ol>
+<li>Tyler <input type="text" id="ex3b-1" data-answer="can" placeholder="completa"> sail.
+<div class="explain" data-for="ex3b-1" data-rule="Habilidad actual → can."></div></li>
+<li>He <input type="text" id="ex3b-2" data-answer="could" placeholder="completa"> speak a little Chinese when he started working in Hong Kong.
+<div class="explain" data-for="ex3b-2" data-rule="Habilidad pasada general → could."></div></li>
+<li>He <input type="text" id="ex3b-3" data-answer="can't" placeholder="completa"> speak German.
+<div class="explain" data-for="ex3b-3" data-rule="No tiene esa habilidad ahora → can't."></div></li>
+<li>He <input type="text" id="ex3b-4" data-answer="has been able to" placeholder="completa"> design websites since 2004.
+<div class="explain" data-for="ex3b-4" data-rule="&quot;since 2004&quot; + Present Perfect → has been able to."></div></li>
+<li>He <input type="text" id="ex3b-5" data-answer="wasn't able to" placeholder="completa"> finish his PhD before he left the US.
+<div class="explain" data-for="ex3b-5" data-rule="Logro puntual negativo en pasado → wasn't able to."></div></li>
+<li>He'd like <input type="text" id="ex3b-6" data-answer="to be able to" placeholder="completa"> speak Russian.
+<div class="explain" data-for="ex3b-6" data-rule="Después de &quot;would like&quot; se necesita infinitivo → to be able to."></div></li>
+<li>He <input type="text" id="ex3b-7" data-answer="will be able to" placeholder="completa"> speak a little Russian soon.
+<div class="explain" data-for="ex3b-7" data-rule="Predicción de habilidad futura → will be able to."></div></li>
+</ol>
+<button class="check-btn" onclick="checkExercise('ex3b')">Revisar</button>
+<span class="score"></span>
+</div>
 <button class="check-btn" onclick="checkExercise('ex3')">Revisar</button>
 <span class="score"></span>
 </div>

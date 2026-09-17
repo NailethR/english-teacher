@@ -20,8 +20,27 @@
 <span class="en">since</span> + punto de inicio (desde cuándo): <span class="en">since 2015, since Tuesday, since I was young</span>.</p>
 </div>
 
+<div class="exercise" id="ex0">
+<h3>Ejercicio A0 — Clasifica en la columna correcta (Workbook p.15, ejercicio 1a)</h3>
+<p class="en" style="font-size:0.85rem">Palabras/frases: a long time · December · I was very young · lunchtime · six months · two weeks · three days · Tuesday · years</p>
+<p>Escribe <strong>for</strong> si la palabra indica duración, o <strong>since</strong> si indica el punto de inicio.</p>
+<ol>
+<li>a long time → <input type="text" id="ex0-1" data-answer="for" placeholder="for/since"></li>
+<li>December → <input type="text" id="ex0-2" data-answer="since" placeholder="for/since"></li>
+<li>I was very young → <input type="text" id="ex0-3" data-answer="since" placeholder="for/since"></li>
+<li>lunchtime → <input type="text" id="ex0-4" data-answer="since" placeholder="for/since"></li>
+<li>six months → <input type="text" id="ex0-5" data-answer="for" placeholder="for/since"></li>
+<li>two weeks → <input type="text" id="ex0-6" data-answer="for" placeholder="for/since"></li>
+<li>three days → <input type="text" id="ex0-7" data-answer="for" placeholder="for/since"></li>
+<li>Tuesday → <input type="text" id="ex0-8" data-answer="since" placeholder="for/since"></li>
+<li>years → <input type="text" id="ex0-9" data-answer="for" placeholder="for/since"></li>
+</ol>
+<button class="check-btn" onclick="checkExercise('ex0')">Revisar</button>
+<span class="score"></span>
+</div>
+
 <div class="exercise" id="ex1">
-<h3>Ejercicio A — for o since</h3>
+<h3>Ejercicio A — for o since (Workbook p.15, ejercicio 1b completo)</h3>
 <ol>
 <li>I've had my car <input type="text" id="ex1-1" data-answer="for" placeholder="for/since"> about a month.
 <div class="explain" data-for="ex1-1" data-rule="&quot;a month&quot; es duración → for."></div></li>
@@ -31,6 +50,18 @@
 <div class="explain" data-for="ex1-3" data-rule="&quot;we were in college&quot; marca el punto de inicio → since."></div></li>
 <li>Owen has worked for the same company <input type="text" id="ex1-4" data-answer="for" placeholder="for/since"> five years.
 <div class="explain" data-for="ex1-4" data-rule="&quot;five years&quot; es duración → for."></div></li>
+<li>Dan and Vicky have lived in Boston <input type="text" id="ex1-5" data-answer="since" placeholder="for/since"> they got married.
+<div class="explain" data-for="ex1-5" data-rule="&quot;they got married&quot; = punto de inicio → since."></div></li>
+<li>My parents have loved gardening <input type="text" id="ex1-6" data-answer="since" placeholder="for/since"> they were young.
+<div class="explain" data-for="ex1-6" data-rule="&quot;they were young&quot; = punto de inicio → since."></div></li>
+<li>I've wanted to go to Australia <input type="text" id="ex1-7" data-answer="for" placeholder="for/since"> a long time.
+<div class="explain" data-for="ex1-7" data-rule="&quot;a long time&quot; es duración → for."></div></li>
+<li>Lola hasn't spoken to me <input type="text" id="ex1-8" data-answer="since" placeholder="for/since"> last year.
+<div class="explain" data-for="ex1-8" data-rule="&quot;last year&quot; marca el punto de inicio → since."></div></li>
+<li>I haven't seen my grandparents <input type="text" id="ex1-9" data-answer="for" placeholder="for/since"> a long time.
+<div class="explain" data-for="ex1-9" data-rule="&quot;a long time&quot; es duración → for."></div></li>
+<li>Max hasn't liked Ayesha <input type="text" id="ex1-10" data-answer="since" placeholder="for/since"> they were in school together.
+<div class="explain" data-for="ex1-10" data-rule="&quot;they were in school together&quot; = punto de inicio → since."></div></li>
 </ol>
 <button class="check-btn" onclick="checkExercise('ex1')">Revisar</button>
 <span class="score"></span>
@@ -46,12 +77,18 @@
 <div class="explain" data-for="ex2-1" data-rule="Pregunta sobre acción que sigue en curso → Present Perfect Continuous."></div></li>
 <li>A: How long was your flight? B: Twelve hours. We ______ (travel) all day. → <input type="text" id="ex2-2" data-answer="'ve been traveling|have been traveling" placeholder="completa">
 <div class="explain" data-for="ex2-2" data-rule="Enfatiza la duración de la actividad reciente → Present Perfect Continuous."></div></li>
-<li>A: Why does Marco's teacher want to see you? B: ______ (he/not/do) his homework lately. → <input type="text" id="ex2-3" data-answer="He hasn't been doing|hasn't been doing" placeholder="completa">
-<div class="explain" data-for="ex2-3" data-rule="&quot;lately&quot; + acción repetida reciente → Present Perfect Continuous."></div></li>
-<li>A: You're late. B: Sorry. ______ (you/wait) long? → <input type="text" id="ex2-4" data-answer="Have you been waiting|have you been waiting" placeholder="completa">
-<div class="explain" data-for="ex2-4" data-rule="Pregunta por cuánto tiempo ha durado la espera → Present Perfect Continuous."></div></li>
-<li>A: You look exhausted. B: Yes, ______ (I/look after) the kids all day! → <input type="text" id="ex2-5" data-answer="I've been looking after|I have been looking after" placeholder="completa">
-<div class="explain" data-for="ex2-5" data-rule="Efecto visible ahora (cansancio) de una actividad reciente y continua → Present Perfect Continuous."></div></li>
+<li>A: My brother has a very good job in New York. B: Really? How long ______ (he/work) there? → <input type="text" id="ex2-3" data-answer="has he been working" placeholder="completa">
+<div class="explain" data-for="ex2-3" data-rule="&quot;how long&quot; + acción que sigue en curso → Present Perfect Continuous."></div></li>
+<li>A: Diana has finally moved into a new apartment. B: Oh good! ______ (she/look for) one for a long time. → <input type="text" id="ex2-4" data-answer="She's been looking for|She has been looking for" placeholder="completa">
+<div class="explain" data-for="ex2-4" data-rule="&quot;for a long time&quot; + acción que acaba de terminar con resultado visible → Present Perfect Continuous."></div></li>
+<li>A: Why does Marco's teacher want to see you? B: ______ (he/not/do) his homework lately. → <input type="text" id="ex2-5" data-answer="He hasn't been doing|hasn't been doing" placeholder="completa">
+<div class="explain" data-for="ex2-5" data-rule="&quot;lately&quot; + acción repetida reciente → Present Perfect Continuous."></div></li>
+<li>A: You're late. B: Sorry. ______ (you/wait) long? → <input type="text" id="ex2-6" data-answer="Have you been waiting|have you been waiting" placeholder="completa">
+<div class="explain" data-for="ex2-6" data-rule="Pregunta por cuánto tiempo ha durado la espera → Present Perfect Continuous."></div></li>
+<li>A: You look exhausted. B: Yes, ______ (I/look after) the kids all day! → <input type="text" id="ex2-7" data-answer="I've been looking after|I have been looking after" placeholder="completa">
+<div class="explain" data-for="ex2-7" data-rule="Efecto visible ahora (cansancio) de una actividad reciente y continua → Present Perfect Continuous."></div></li>
+<li>A: How's your soccer team doing, Pete? B: Pretty good, but ______ (I/not/play) recently. I hurt my foot. → <input type="text" id="ex2-8" data-answer="I haven't been playing" placeholder="completa">
+<div class="explain" data-for="ex2-8" data-rule="&quot;recently&quot; + acción interrumpida con efecto en el presente → Present Perfect Continuous."></div></li>
 </ol>
 <button class="check-btn" onclick="checkExercise('ex2')">Revisar</button>
 <span class="score"></span>

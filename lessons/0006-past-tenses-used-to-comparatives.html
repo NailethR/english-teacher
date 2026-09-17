@@ -30,6 +30,12 @@
 <div class="explain" data-for="ex1-5" data-rule="Ya la habías visto antes de ese momento → Past Perfect."></div></li>
 <li>I ______ (play) ice hockey and tennis when I was in school. (hábito general en esa época) → <input type="text" id="ex1-6" data-answer="played" placeholder="completa">
 <div class="explain" data-for="ex1-6" data-rule="Hábito repetido en un periodo del pasado, sin interrupción → Simple Past."></div></li>
+<li>We ______ (not/score) any goals in our last game. → <input type="text" id="ex1-8" data-answer="didn't score" placeholder="completa">
+<div class="explain" data-for="ex1-8" data-rule="Hecho puntual y terminado → Simple Past."></div></li>
+<li>It was late and people ______ (hurry) to get home before it got dark. → <input type="text" id="ex1-9" data-answer="were hurrying" placeholder="completa">
+<div class="explain" data-for="ex1-9" data-rule="Acción en curso en ese momento → Past Continuous."></div></li>
+<li>We were exhausted when we got home — we ______ (have) a very busy day. → <input type="text" id="ex1-10" data-answer="had had" placeholder="completa">
+<div class="explain" data-for="ex1-10" data-rule="El día ya había pasado antes de llegar a casa → Past Perfect (had had: el auxiliar &quot;had&quot; + el verbo &quot;have&quot; en participio, que también es &quot;had&quot;)."></div></li>
 <li>Sorry, I ______ (drive) when you called, so I couldn't answer. → <input type="text" id="ex1-7" data-answer="was driving" placeholder="completa">
 <div class="explain" data-for="ex1-7" data-rule="Acción en curso en el momento de la llamada → Past Continuous."></div></li>
 </ol>
@@ -37,9 +43,57 @@
 <span class="score"></span>
 </div>
 
+<div class="exercise" id="ex1c">
+<h3>Ejercicio A2 — Completa (Workbook p.34, ejercicio 3b completo)</h3>
+<ol>
+<li>They ______ (drive) to the airport when they suddenly ______ (remember) that they ______ (not/lock) the back door. → <input type="text" id="ex1c-1" data-answer="were driving" placeholder="completa"> / <input type="text" id="ex1c-2" data-answer="remembered" placeholder="completa"> / <input type="text" id="ex1c-3" data-answer="hadn't locked" placeholder="completa">
+<div class="explain" data-for="ex1c-1" data-rule="were driving = en curso; remembered = interrumpe; hadn&#39;t locked = ya había pasado antes → Past Perfect."></div></li>
+<li>I ______ (not/recognize) many people at my school reunion because everyone ______ (change) a lot in the last 20 years. → <input type="text" id="ex1c-4" data-answer="didn't recognize" placeholder="completa"> / <input type="text" id="ex1c-5" data-answer="had changed" placeholder="completa">
+<div class="explain" data-for="ex1c-4" data-rule="didn&#39;t recognize = hecho puntual; had changed = cambio que ya había ocurrido antes → Past Perfect."></div></li>
+<li>My sister ______ (wait) to go out for dinner yesterday when her boyfriend ______ (call) her to say that he ______ (not/can) come because his car ______ (break down). → <input type="text" id="ex1c-6" data-answer="was waiting" placeholder="completa"> / <input type="text" id="ex1c-7" data-answer="called" placeholder="completa"> / <input type="text" id="ex1c-8" data-answer="couldn't" placeholder="completa"> / <input type="text" id="ex1c-9" data-answer="had broken down" placeholder="completa">
+<div class="explain" data-for="ex1c-6" data-rule="was waiting = en curso; called = interrumpe; couldn&#39;t come = negativo simple; had broken down = ya había pasado antes → Past Perfect."></div></li>
+<li>Manchester City ______ (beat) Manchester United yesterday. United ______ (win) 1-0 in the first half, but City ______ (score) two goals in the second half. → <input type="text" id="ex1c-10" data-answer="beat" placeholder="completa"> / <input type="text" id="ex1c-11" data-answer="had won" placeholder="completa"> / <input type="text" id="ex1c-12" data-answer="scored" placeholder="completa">
+<div class="explain" data-for="ex1c-10" data-rule="beat = resultado final puntual; had won 1-0 = lo que ya había pasado en la primera mitad, antes del resultado final → Past Perfect; scored = hecho puntual de la segunda mitad."></div></li>
+<li>He ______ (run) to the train station, but the nine o'clock train ______ (already/leave). The station was empty except for two people who ______ (wait) for the next train. → <input type="text" id="ex1c-13" data-answer="ran" placeholder="completa"> / <input type="text" id="ex1c-14" data-answer="had already left" placeholder="completa"> / <input type="text" id="ex1c-15" data-answer="were waiting" placeholder="completa">
+<div class="explain" data-for="ex1c-13" data-rule="ran = hecho puntual; had already left = ya había pasado antes → Past Perfect; were waiting = en curso en ese momento."></div></li>
+</ol>
+<button class="check-btn" onclick="checkExercise('ex1c')">Revisar</button>
+<span class="score"></span>
+</div>
+
 <h2>2. used to — forma y significado</h2>
+
+<h3>Ejercicio B0 — Elige la forma correcta (Workbook p.35, ejercicio 1a completo)</h3>
+<div id="mc-usedto">
+<div class="mc-question" data-correct="usually see"><p>1. I ______ my friends two or three times a week. We often go to the movies.</p>
+<div class="mc-options"><button onclick="selectOption(this, this.closest('.mc-question'))">used to see</button><button onclick="selectOption(this, this.closest('.mc-question'))">usually see</button></div>
+<div class="mc-feedback" data-rule="Sigue pasando ahora (&quot;we often go&quot;) → hábito presente, usually see."></div></div>
+<div class="mc-question" data-correct="used to play"><p>2. Matt ______ basketball, but he doesn't anymore.</p>
+<div class="mc-options"><button onclick="selectOption(this, this.closest('.mc-question'))">used to play</button><button onclick="selectOption(this, this.closest('.mc-question'))">usually plays</button></div>
+<div class="mc-feedback" data-rule="&quot;doesn&#39;t anymore&quot; = ya no es verdad → used to play."></div></div>
+<div class="mc-question" data-correct="didn't use to go"><p>3. We ______ away on vacation because we can't afford it.</p>
+<div class="mc-options"><button onclick="selectOption(this, this.closest('.mc-question'))">didn't use to go</button><button onclick="selectOption(this, this.closest('.mc-question'))">don't usually go</button></div>
+<div class="mc-feedback" data-rule="&quot;can&#39;t afford it&quot; en presente sugiere que habla de un hábito pasado que cambió → didn&#39;t use to go."></div></div>
+<div class="mc-question" data-correct="usually wears"><p>4. Jordan ______ makeup when she goes out.</p>
+<div class="mc-options"><button onclick="selectOption(this, this.closest('.mc-question'))">used to wear</button><button onclick="selectOption(this, this.closest('.mc-question'))">usually wears</button></div>
+<div class="mc-feedback" data-rule="Hábito presente (&quot;when she goes out&quot; en presente) → usually wears."></div></div>
+<div class="mc-question" data-correct="Did you use to have"><p>5. ______ a lot of friends when you were at school?</p>
+<div class="mc-options"><button onclick="selectOption(this, this.closest('.mc-question'))">Did you use to have</button><button onclick="selectOption(this, this.closest('.mc-question'))">Do you usually have</button></div>
+<div class="mc-feedback" data-rule="&quot;when you were at school&quot; = pasado → Did you use to have."></div></div>
+<div class="mc-question" data-correct="stayed"><p>6. We ______ in the same cottage every summer when I was a child.</p>
+<div class="mc-options"><button onclick="selectOption(this, this.closest('.mc-question'))">stayed</button><button onclick="selectOption(this, this.closest('.mc-question'))">usually stay</button></div>
+<div class="mc-feedback" data-rule="&quot;stayed&quot; ya lleva el significado de hábito repetido con &quot;every summer&quot; → no hace falta &quot;used to&quot; ni &quot;usually&quot;, el simple past con &quot;every&quot; ya lo expresa."></div></div>
+<div class="mc-question" data-correct="never used to watch"><p>7. I ______ much TV, but now I'm addicted to Netflix.</p>
+<div class="mc-options"><button onclick="selectOption(this, this.closest('.mc-question'))">never used to watch</button><button onclick="selectOption(this, this.closest('.mc-question'))">don't usually watch</button></div>
+<div class="mc-feedback" data-rule="&quot;but now I&#39;m addicted&quot; = cambió → never used to watch."></div></div>
+<div class="mc-question" data-correct="went skiing"><p>8. I ______ with some friends last weekend.</p>
+<div class="mc-options"><button onclick="selectOption(this, this.closest('.mc-question'))">went skiing</button><button onclick="selectOption(this, this.closest('.mc-question'))">used to go skiing</button></div>
+<div class="mc-feedback" data-rule="&quot;last weekend&quot; = una vez específica → Simple Past (went), nunca &quot;used to&quot; (que es para hábitos repetidos, no un evento único)."></div></div>
+</div>
+<button class="check-btn" onclick="resetSection('mc-usedto')">Repetir</button>
+
 <div class="exercise" id="ex2">
-<h3>Ejercicio B — used to / usually / simple present (corrige si hay error, o "OK")</h3>
+<h3>Ejercicio B — used to / usually / simple present (corrige si hay error, o "OK") — Workbook p.35, ejercicio 1b completo</h3>
 <ol>
 <li>Where did you used to live before you moved here? → <input type="text" id="ex2-1" data-answer="did you use to live" placeholder="corrige">
 <div class="explain" data-for="ex2-1" data-rule="En pregunta, &quot;use to&quot; sin -d (el &quot;did&quot; ya marca el pasado)."></div></li>
@@ -53,6 +107,14 @@
 <div class="explain" data-for="ex2-5" data-rule="Mismo error: hábito presente → usually walk, no &quot;use to&quot;."></div></li>
 <li>Did you use to have long hair when you were younger? → <input type="text" id="ex2-6" data-answer="OK" placeholder="OK o corrige">
 <div class="explain" data-for="ex2-6" data-rule="Correcto: pregunta en pasado con &quot;use to&quot; sin -d."></div></li>
+<li>Carol never used to be very friendly, but now she always says hello to me. → <input type="text" id="ex2-7" data-answer="OK" placeholder="OK o corrige">
+<div class="explain" data-for="ex2-7" data-rule="Correcto: estado pasado que ya no es verdad."></div></li>
+<li>Do you use to get up late on Sundays? → <input type="text" id="ex2-8" data-answer="do you usually get up" placeholder="corrige">
+<div class="explain" data-for="ex2-8" data-rule="Hábito presente (Sundays en general) → do you usually get up, no &quot;use to&quot; (que necesitaría &quot;did&quot; para pasado)."></div></li>
+<li>I used to go to Paris once with my parents when I was little. → <input type="text" id="ex2-9" data-answer="OK" placeholder="OK o corrige">
+<div class="explain" data-for="ex2-9" data-rule="Correcto: hábito/experiencia del pasado."></div></li>
+<li>We stayed in an expensive hotel when we were in Las Vegas. → <input type="text" id="ex2-10" data-answer="OK" placeholder="OK o corrige">
+<div class="explain" data-for="ex2-10" data-rule="Correcto: evento único en el pasado → Simple Past, no &quot;used to&quot; (que es solo para hábitos repetidos)."></div></li>
 </ol>
 <button class="check-btn" onclick="checkExercise('ex2')">Revisar</button>
 <span class="score"></span>
@@ -79,17 +141,30 @@
 
 <h2>4. Vocabulario: deportes (SB p.157)</h2>
 <div class="exercise" id="ex4">
-<h3>Ejercicio D — Personas y lugares del deporte</h3>
-<p class="en" style="font-size:0.85rem">Lista: captain · referee · stadium · team · court · course · slope</p>
+<h3>Ejercicio D — Personas y lugares del deporte (Workbook p.32, ejercicio 1a completo — 11 definiciones)</h3>
+<p class="en" style="font-size:0.85rem">Lista: crowd (dado) · fans · referee · team · umpire · players · stadium · arena · captain · coach · spectators</p>
 <ol>
+<li>A large group of people who are watching a sporting event. → <span class="en">crowd</span> (ejemplo)</li>
+<li>People who are very enthusiastic about a sport. → <input type="text" id="ex4-15" data-answer="fans" placeholder="palabra">
+<div class="explain" data-for="ex4-15" data-rule="fans (hinchas/aficionados)."></div></li>
 <li>An official who makes sure players obey the rules (soccer, basketball). → <input type="text" id="ex4-1" data-answer="referee" placeholder="palabra">
 <div class="explain" data-for="ex4-1" data-rule="referee (árbitro en deportes de equipo)."></div></li>
 <li>A group of people who play a sport together against another group. → <input type="text" id="ex4-2" data-answer="team" placeholder="palabra">
 <div class="explain" data-for="ex4-2" data-rule="team."></div></li>
+<li>An official who makes sure players obey the rules, e.g., in baseball. → <input type="text" id="ex4-16" data-answer="umpire" placeholder="palabra">
+<div class="explain" data-for="ex4-16" data-rule="umpire (árbitro en béisbol/tenis)."></div></li>
+<li>People who play a game or sport. → <input type="text" id="ex4-17" data-answer="players" placeholder="palabra">
+<div class="explain" data-for="ex4-17" data-rule="players."></div></li>
 <li>A large structure with no roof where people watch sports. → <input type="text" id="ex4-3" data-answer="stadium" placeholder="palabra">
 <div class="explain" data-for="ex4-3" data-rule="stadium."></div></li>
+<li>An area with seats around it where public entertainment such as sports events are held. → <input type="text" id="ex4-18" data-answer="arena" placeholder="palabra">
+<div class="explain" data-for="ex4-18" data-rule="arena."></div></li>
 <li>The person who is the leader of a team. → <input type="text" id="ex4-4" data-answer="captain" placeholder="palabra">
 <div class="explain" data-for="ex4-4" data-rule="captain."></div></li>
+<li>A person who trains people to compete in certain sports. → <input type="text" id="ex4-13" data-answer="coach" placeholder="palabra">
+<div class="explain" data-for="ex4-13" data-rule="coach (entrenador)."></div></li>
+<li>People who are watching a sports event. → <input type="text" id="ex4-14" data-answer="spectators" placeholder="palabra">
+<div class="explain" data-for="ex4-14" data-rule="spectators."></div></li>
 <li>tennis/basketball → <input type="text" id="ex4-5" data-answer="court" placeholder="lugar">; golf → <input type="text" id="ex4-6" data-answer="course" placeholder="lugar">; ski → <input type="text" id="ex4-7" data-answer="slope" placeholder="lugar">
 <div class="explain" data-for="ex4-5" data-rule="court (tenis/básquet), course (golf), slope (esquí) — track (atletismo), field (fútbol/béisbol), pool (natación)."></div></li>
 <li>My team <input type="text" id="ex4-8" data-answer="beat" placeholder="verbo"> Manchester United yesterday. (venció a otro equipo → usa "beat", no "won")
