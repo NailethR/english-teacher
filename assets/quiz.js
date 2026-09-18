@@ -75,6 +75,23 @@ function selectOption(button, question) {
   }
 }
 
+// Mezcla el orden de los <li> de un ejercicio y lo reinicia — para que
+// "repetir" no sea memorizar la posición sino recordar la palabra de nuevo.
+function shuffleExercise(exerciseId) {
+  const box = document.getElementById(exerciseId);
+  if (!box) return;
+  const list = box.querySelector("ol, ul");
+  if (list) {
+    const items = Array.from(list.children);
+    for (let i = items.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [items[i], items[j]] = [items[j], items[i]];
+    }
+    items.forEach((li) => list.appendChild(li));
+  }
+  resetSection(exerciseId);
+}
+
 // Reinicia todas las flashcards y multiple-choice de un contenedor (útil
 // para "repetir esta sección" sin recargar la página).
 function resetSection(sectionId) {

@@ -2,206 +2,205 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Vocabulario — Flashcards y Quiz</title>
+<title>Vocabulario — Recall activo</title>
 <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
 
-<h1><span class="unit-tag">EXTRA</span>Vocabulario — Flashcards + Quiz</h1>
-<p class="subtitle">Las 4 Vocabulary Banks en formato de memorización activa. Úsalo cualquier día, no reemplaza los ejercicios de gramática.</p>
+<h1><span class="unit-tag">EXTRA</span>Vocabulario — Escribe, no selecciones</h1>
+<p class="subtitle">Las 4 Vocabulary Banks completas (SB pp.153, 154, 157, 158) — cada palabra, con su definición real del libro. Tienes que escribirla en inglés, no elegirla de una lista.</p>
 
 <div class="card">
-<strong>Cómo usar esta página:</strong> primero las <strong>flashcards</strong> (haz clic para voltear y ver el significado — repítelas hasta reconocer la palabra sin voltear). Después el <strong>quiz</strong> para comprobar que de verdad quedó grabado. Repite cuantas veces quieras.
+<strong>Cómo usar esta página:</strong> lee la definición (en inglés, como en el examen), escribe la palabra, pulsa "Revisar". Cuando saques el puntaje completo, pulsa <strong>"Repetir (orden mezclado)"</strong> — cambia el orden de las preguntas para que no memorices la posición, memorices la palabra.
 </div>
 
-<h2>1. Personalidad (SB p.153)</h2>
-<h3>Flashcards</h3>
-<div class="flashcard-grid" id="fc-personality">
-<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">spoiled</div><div class="back">consentido/a — le dan todo lo que pide</div></div>
-<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">stubborn</div><div class="back">terco/a — nunca cambia de opinión</div></div>
-<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">insecure</div><div class="back">inseguro/a — no confía en sí mismo</div></div>
-<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">selfish</div><div class="back">egoísta — solo piensa en sí mismo</div></div>
-<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">sensible</div><div class="back">sensato/a, práctico/a (¡NO es "sensible" en español!)</div></div>
-<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">sensitive</div><div class="back">se ofende/hiere fácilmente</div></div>
-<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">bossy</div><div class="back">mandón/a — le gusta decirle a otros qué hacer</div></div>
-<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">reliable</div><div class="back">confiable — se puede depender de él/ella</div></div>
-<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">moody</div><div class="back">cambia de humor rápido y seguido</div></div>
-<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">rebellious</div><div class="back">rebelde — no le gusta obedecer reglas</div></div>
-<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">mature</div><div class="back">maduro/a — se comporta como adulto</div></div>
-<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">affectionate</div><div class="back">cariñoso/a — demuestra afecto seguido</div></div>
+<h2>1. Personalidad (SB p.153) — las 22 palabras completas</h2>
+<div class="exercise" id="v-pers">
+<ol>
+<li>People think about themselves and not about other people. → <input type="text" id="vp-1" data-answer="selfish" placeholder="escribe en inglés"></li>
+<li>Children are rude and behave badly because they are given everything they want. → <input type="text" id="vp-2" data-answer="spoiled" placeholder="escribe en inglés"></li>
+<li>People behave like adults. → <input type="text" id="vp-3" data-answer="mature" placeholder="escribe en inglés"></li>
+<li>People always tell the truth and never steal or cheat. → <input type="text" id="vp-4" data-answer="honest" placeholder="escribe en inglés"></li>
+<li>People have an attractive personality and people like them. → <input type="text" id="vp-5" data-answer="charming" placeholder="escribe en inglés"></li>
+<li>People have common sense and are practical. → <input type="text" id="vp-6" data-answer="sensible" placeholder="escribe en inglés"></li>
+<li>People are friendly and enjoy being with other people (synonym: outgoing). → <input type="text" id="vp-7" data-answer="sociable" placeholder="escribe en inglés"></li>
+<li>People are often worried or stressed. → <input type="text" id="vp-8" data-answer="anxious" placeholder="escribe en inglés"></li>
+<li>People have a good imagination. → <input type="text" id="vp-9" data-answer="imaginative" placeholder="escribe en inglés"></li>
+<li>People like doing things on their own, without help. → <input type="text" id="vp-10" data-answer="independent" placeholder="escribe en inglés"></li>
+<li>People like telling other people what to do. → <input type="text" id="vp-11" data-answer="bossy" placeholder="escribe en inglés"></li>
+<li>People are not confident about themselves. → <input type="text" id="vp-12" data-answer="insecure" placeholder="escribe en inglés"></li>
+<li>People can be easily hurt or offended. → <input type="text" id="vp-13" data-answer="sensitive" placeholder="escribe en inglés"></li>
+<li>People never change their opinion or attitude about something. → <input type="text" id="vp-14" data-answer="stubborn" placeholder="escribe en inglés"></li>
+<li>People can wait for a long time or accept difficulties without getting angry. → <input type="text" id="vp-15" data-answer="patient" placeholder="escribe en inglés"></li>
+<li>People want to be successful in life. → <input type="text" id="vp-16" data-answer="ambitious" placeholder="escribe en inglés"></li>
+<li>People are ones you can trust or depend on (synonym: responsible). → <input type="text" id="vp-17" data-answer="reliable" placeholder="escribe en inglés"></li>
+<li>People are sure of themselves and their abilities. → <input type="text" id="vp-18" data-answer="self-confident" placeholder="escribe en inglés"></li>
+<li>People don't like obeying rules. → <input type="text" id="vp-19" data-answer="rebellious" placeholder="escribe en inglés"></li>
+<li>People have moods that change quickly and often. → <input type="text" id="vp-20" data-answer="moody" placeholder="escribe en inglés"></li>
+<li>People always want to win. → <input type="text" id="vp-21" data-answer="competitive" placeholder="escribe en inglés"></li>
+<li>People show that they love or like other people very much. → <input type="text" id="vp-22" data-answer="affectionate" placeholder="escribe en inglés"></li>
+</ol>
+<button class="check-btn" onclick="checkExercise('v-pers')">Revisar</button>
+<button class="check-btn" style="background:var(--text-muted)" onclick="shuffleExercise('v-pers')">Repetir (orden mezclado)</button>
+<span class="score"></span>
 </div>
 
-<h3>Quiz</h3>
-<div id="mc-personality">
-<div class="mc-question" data-correct="Stubborn">
-<p>"People never change their opinion or attitude about something."</p>
-<div class="mc-options">
-<button onclick="selectOption(this, this.closest('.mc-question'))">Stubborn</button>
-<button onclick="selectOption(this, this.closest('.mc-question'))">Sociable</button>
-<button onclick="selectOption(this, this.closest('.mc-question'))">Patient</button>
+<h3>Prefijos negativos (p.153)</h3>
+<div class="rule">
+<p><span class="en">un-, in-, dis-</span> son los prefijos negativos más comunes. <span class="en">in-</span> cambia a <span class="en">im-</span> (antes de b/m/p), <span class="en">ir-</span> (antes de r), <span class="en">il-</span> (antes de l).</p>
 </div>
-<div class="mc-feedback"></div>
-</div>
-<div class="mc-question" data-correct="Insecure">
-<p>"People are not confident about themselves."</p>
-<div class="mc-options">
-<button onclick="selectOption(this, this.closest('.mc-question'))">Ambitious</button>
-<button onclick="selectOption(this, this.closest('.mc-question'))">Insecure</button>
-<button onclick="selectOption(this, this.closest('.mc-question'))">Charming</button>
-</div>
-<div class="mc-feedback"></div>
-</div>
-<div class="mc-question" data-correct="Sensible">
-<p>Falso amigo — significa "práctico, con sentido común" (NO "sensible" como en español):</p>
-<div class="mc-options">
-<button onclick="selectOption(this, this.closest('.mc-question'))">Sensitive</button>
-<button onclick="selectOption(this, this.closest('.mc-question'))">Sensible</button>
-<button onclick="selectOption(this, this.closest('.mc-question'))">Sympathetic</button>
-</div>
-<div class="mc-feedback" data-rule="sensitive = se ofende fácil; sympathetic = compasivo con alguien triste."></div>
-</div>
-<div class="mc-question" data-correct="Bossy">
-<p>"People like telling other people what to do."</p>
-<div class="mc-options">
-<button onclick="selectOption(this, this.closest('.mc-question'))">Bossy</button>
-<button onclick="selectOption(this, this.closest('.mc-question'))">Reliable</button>
-<button onclick="selectOption(this, this.closest('.mc-question'))">Mature</button>
-</div>
-<div class="mc-feedback"></div>
-</div>
-</div>
-<button class="check-btn" onclick="resetSection('mc-personality')">Repetir este quiz</button>
-
-<h2>2. Dinero (SB p.154)</h2>
-<h3>Flashcards</h3>
-<div class="flashcard-grid" id="fc-money">
-<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">inherit</div><div class="back">heredar</div></div>
-<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">owe</div><div class="back">deber (dinero)</div></div>
-<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">borrow</div><div class="back">pedir prestado</div></div>
-<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">lend</div><div class="back">prestar (tú lo das)</div></div>
-<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">be worth</div><div class="back">valer (tener un valor de)</div></div>
-<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">can't afford</div><div class="back">no poder pagar/costear</div></div>
-<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">mortgage</div><div class="back">hipoteca</div></div>
-<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">loan</div><div class="back">préstamo</div></div>
-<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">salary</div><div class="back">salario</div></div>
-<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">tax</div><div class="back">impuesto</div></div>
-<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">budget</div><div class="back">presupuesto</div></div>
-<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">bill</div><div class="back">factura/cuenta por pagar</div></div>
+<div class="exercise" id="v-prefix">
+<ol>
+<li>ambitious → <input type="text" id="vpf-1" data-answer="unambitious" placeholder="escribe la forma negativa"></li>
+<li>patient → <input type="text" id="vpf-2" data-answer="impatient" placeholder="escribe la forma negativa"></li>
+<li>reliable → <input type="text" id="vpf-3" data-answer="unreliable" placeholder="escribe la forma negativa"></li>
+<li>mature → <input type="text" id="vpf-4" data-answer="immature" placeholder="escribe la forma negativa"></li>
+<li>sensitive → <input type="text" id="vpf-5" data-answer="insensitive" placeholder="escribe la forma negativa"></li>
+<li>organized → <input type="text" id="vpf-6" data-answer="disorganized" placeholder="escribe la forma negativa"></li>
+<li>honest → <input type="text" id="vpf-7" data-answer="dishonest" placeholder="escribe la forma negativa"></li>
+<li>responsible → <input type="text" id="vpf-8" data-answer="irresponsible" placeholder="escribe la forma negativa"></li>
+</ol>
+<button class="check-btn" onclick="checkExercise('v-prefix')">Revisar</button>
+<button class="check-btn" style="background:var(--text-muted)" onclick="shuffleExercise('v-prefix')">Repetir (orden mezclado)</button>
+<span class="score"></span>
 </div>
 
-<h3>Quiz</h3>
-<div id="mc-money">
-<div class="mc-question" data-correct="Inherit">
-<p>"My uncle died and left me $5,000." → I'm going to ______ $5,000.</p>
-<div class="mc-options">
-<button onclick="selectOption(this, this.closest('.mc-question'))">Invest</button>
-<button onclick="selectOption(this, this.closest('.mc-question'))">Inherit</button>
-<button onclick="selectOption(this, this.closest('.mc-question'))">Owe</button>
-</div>
-<div class="mc-feedback"></div>
-</div>
-<div class="mc-question" data-correct="Owe">
-<p>"Jim gave me $100, I haven't paid him back yet." → I ______ Jim $100.</p>
-<div class="mc-options">
-<button onclick="selectOption(this, this.closest('.mc-question'))">Lend</button>
-<button onclick="selectOption(this, this.closest('.mc-question'))">Borrow</button>
-<button onclick="selectOption(this, this.closest('.mc-question'))">Owe</button>
-</div>
-<div class="mc-feedback"></div>
-</div>
-<div class="mc-question" data-correct="Mortgage">
-<p>Money that you borrow from a bank specifically to buy a house.</p>
-<div class="mc-options">
-<button onclick="selectOption(this, this.closest('.mc-question'))">Loan</button>
-<button onclick="selectOption(this, this.closest('.mc-question'))">Mortgage</button>
-<button onclick="selectOption(this, this.closest('.mc-question'))">Budget</button>
-</div>
-<div class="mc-feedback"></div>
-</div>
-</div>
-<button class="check-btn" onclick="resetSection('mc-money')">Repetir este quiz</button>
-
-<h2>3. Deportes (SB p.157)</h2>
-<h3>Flashcards</h3>
-<div class="flashcard-grid" id="fc-sports">
-<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">referee</div><div class="back">árbitro (deportes de equipo)</div></div>
-<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">umpire</div><div class="back">árbitro (béisbol, tenis)</div></div>
-<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">spectators</div><div class="back">espectadores</div></div>
-<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">captain</div><div class="back">capitán del equipo</div></div>
-<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">court</div><div class="back">cancha (tenis/básquet)</div></div>
-<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">track</div><div class="back">pista (atletismo)</div></div>
-<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">warm up</div><div class="back">calentar antes de ejercitar</div></div>
-<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">work out</div><div class="back">hacer ejercicio</div></div>
-<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">be sent off</div><div class="back">ser expulsado</div></div>
-<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">be knocked out</div><div class="back">ser eliminado</div></div>
-<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">beat</div><div class="back">vencer a (un rival)</div></div>
-<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">tie</div><div class="back">empatar</div></div>
+<h2>2. Dinero (SB p.154) — verbos completos</h2>
+<div class="exercise" id="v-money-v">
+<ol>
+<li>To receive money when someone dies and leaves it to you. → <input type="text" id="vmv-1" data-answer="inherit" placeholder="escribe en inglés"></li>
+<li>To put money aside for later. → <input type="text" id="vmv-2" data-answer="save" placeholder="escribe en inglés"></li>
+<li>To give money to someone that they will pay back. → <input type="text" id="vmv-3" data-answer="lend" placeholder="escribe en inglés"></li>
+<li>To ask someone to give you money that you'll pay back. → <input type="text" id="vmv-4" data-answer="borrow" placeholder="escribe en inglés"></li>
+<li>To spend money on stupid or unnecessary things. → <input type="text" id="vmv-5" data-answer="waste" placeholder="escribe en inglés"></li>
+<li>To not have enough money to buy something. → <input type="text" id="vmv-6" data-answer="can't afford" placeholder="escribe en inglés"></li>
+<li>To ask someone to pay a certain amount for a service. → <input type="text" id="vmv-7" data-answer="charge" placeholder="escribe en inglés"></li>
+<li>To have a certain value. → <input type="text" id="vmv-8" data-answer="be worth" placeholder="escribe en inglés"></li>
+<li>Money you received but haven't paid back yet. → <input type="text" id="vmv-9" data-answer="owe" placeholder="escribe en inglés"></li>
+<li>To put money into something (like a company) hoping to make more money. → <input type="text" id="vmv-10" data-answer="invest" placeholder="escribe en inglés"></li>
+<li>To get paid for the work you do. → <input type="text" id="vmv-11" data-answer="earn" placeholder="escribe en inglés"></li>
+<li>To collect money for a cause (e.g., charity). → <input type="text" id="vmv-12" data-answer="raise" placeholder="escribe en inglés"></li>
+<li>The price of something. → <input type="text" id="vmv-13" data-answer="cost" placeholder="escribe en inglés"></li>
+</ol>
+<button class="check-btn" onclick="checkExercise('v-money-v')">Revisar</button>
+<button class="check-btn" style="background:var(--text-muted)" onclick="shuffleExercise('v-money-v')">Repetir (orden mezclado)</button>
+<span class="score"></span>
 </div>
 
-<h3>Quiz</h3>
-<div id="mc-sports">
-<div class="mc-question" data-correct="Beat">
-<p>My team ______ Manchester United 3-0. (vencí a otro equipo)</p>
-<div class="mc-options">
-<button onclick="selectOption(this, this.closest('.mc-question'))">Won</button>
-<button onclick="selectOption(this, this.closest('.mc-question'))">Beat</button>
-<button onclick="selectOption(this, this.closest('.mc-question'))">Tied</button>
-</div>
-<div class="mc-feedback" data-rule="win + juego/medalla; beat + rival."></div>
-</div>
-<div class="mc-question" data-correct="Referee">
-<p>An official who makes sure players obey the rules in soccer or basketball.</p>
-<div class="mc-options">
-<button onclick="selectOption(this, this.closest('.mc-question'))">Umpire</button>
-<button onclick="selectOption(this, this.closest('.mc-question'))">Referee</button>
-<button onclick="selectOption(this, this.closest('.mc-question'))">Coach</button>
-</div>
-<div class="mc-feedback"></div>
-</div>
-</div>
-<button class="check-btn" onclick="resetSection('mc-sports')">Repetir este quiz</button>
-
-<h2>4. Relaciones (SB p.158)</h2>
-<h3>Flashcards</h3>
-<div class="flashcard-grid" id="fc-relationships">
-<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">couple</div><div class="back">pareja</div></div>
-<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">fiancé / fiancée</div><div class="back">prometido / prometida</div></div>
-<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">ex</div><div class="back">ex pareja (coloquial)</div></div>
-<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">roommate</div><div class="back">compañero/a de cuarto/depto</div></div>
-<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">get along</div><div class="back">llevarse bien</div></div>
-<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">break up</div><div class="back">terminar una relación</div></div>
-<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">lose touch</div><div class="back">perder contacto</div></div>
-<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">get in touch</div><div class="back">volver a contactar</div></div>
-<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">have in common</div><div class="back">tener en común</div></div>
-<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">propose</div><div class="back">proponer matrimonio</div></div>
+<h3>Sustantivos y phrasal verbs de dinero</h3>
+<div class="exercise" id="v-money-n">
+<ol>
+<li>A piece of paper that shows how much money you have to pay for something. → <input type="text" id="vmn-1" data-answer="bill" placeholder="escribe en inglés"></li>
+<li>Money that you have available and a plan of how to spend it. → <input type="text" id="vmn-2" data-answer="budget" placeholder="escribe en inglés"></li>
+<li>A fast way of paying where you hold your card or phone over a reader, no PIN. → <input type="text" id="vmn-3" data-answer="contactless payment" placeholder="escribe en inglés"></li>
+<li>Money that somebody (or a bank) lends you. → <input type="text" id="vmn-4" data-answer="loan" placeholder="escribe en inglés"></li>
+<li>Money that you borrow from a bank to buy a house. → <input type="text" id="vmn-5" data-answer="mortgage" placeholder="escribe en inglés"></li>
+<li>The money you get for the work you do (paid monthly). → <input type="text" id="vmn-6" data-answer="salary" placeholder="escribe en inglés"></li>
+<li>Money that you pay to the government. → <input type="text" id="vmn-7" data-answer="tax" placeholder="escribe en inglés"></li>
+<li>To take money from an ATM. → <input type="text" id="vmn-8" data-answer="take out" placeholder="phrasal verb"></li>
+<li>To pay back money you borrowed. → <input type="text" id="vmn-9" data-answer="pay back" placeholder="phrasal verb"></li>
+<li>To depend financially on someone else (e.g., your parents). → <input type="text" id="vmn-10" data-answer="live off" placeholder="phrasal verb"></li>
+<li>To manage on a certain amount of money. → <input type="text" id="vmn-11" data-answer="live on" placeholder="phrasal verb"></li>
+</ol>
+<button class="check-btn" onclick="checkExercise('v-money-n')">Revisar</button>
+<button class="check-btn" style="background:var(--text-muted)" onclick="shuffleExercise('v-money-n')">Repetir (orden mezclado)</button>
+<span class="score"></span>
 </div>
 
-<h3>Quiz</h3>
-<div id="mc-relationships">
-<div class="mc-question" data-correct="Break up">
-<p>"We argued a lot, and eventually we ______." (terminamos la relación)</p>
-<div class="mc-options">
-<button onclick="selectOption(this, this.closest('.mc-question'))">Get along</button>
-<button onclick="selectOption(this, this.closest('.mc-question'))">Break up</button>
-<button onclick="selectOption(this, this.closest('.mc-question'))">Get in touch</button>
+<h2>3. Deportes (SB p.157) — completo</h2>
+<div class="exercise" id="v-sports-p">
+<ol>
+<li>A large group of people who are watching a sporting event. → <input type="text" id="vsp-1" data-answer="crowd" placeholder="escribe en inglés"></li>
+<li>People who are very enthusiastic about a sport. → <input type="text" id="vsp-2" data-answer="fans" placeholder="escribe en inglés"></li>
+<li>An official who makes sure players obey the rules (soccer, basketball, ice hockey). → <input type="text" id="vsp-3" data-answer="referee" placeholder="escribe en inglés"></li>
+<li>A group of people who play a sport together against another group. → <input type="text" id="vsp-4" data-answer="team" placeholder="escribe en inglés"></li>
+<li>An official who makes sure players obey the rules, e.g., in baseball. → <input type="text" id="vsp-5" data-answer="umpire" placeholder="escribe en inglés"></li>
+<li>People who play a game or sport. → <input type="text" id="vsp-6" data-answer="players" placeholder="escribe en inglés"></li>
+<li>A large structure, usually with no roof, where people watch sports. → <input type="text" id="vsp-7" data-answer="stadium" placeholder="escribe en inglés"></li>
+<li>An area with seats around it where public entertainment such as sports events are held. → <input type="text" id="vsp-8" data-answer="arena" placeholder="escribe en inglés"></li>
+<li>The person who is the leader of a team. → <input type="text" id="vsp-9" data-answer="captain" placeholder="escribe en inglés"></li>
+<li>A person who trains people to compete in certain sports. → <input type="text" id="vsp-10" data-answer="coach" placeholder="escribe en inglés"></li>
+<li>People who are watching a sports event. → <input type="text" id="vsp-11" data-answer="spectators" placeholder="escribe en inglés"></li>
+</ol>
+<button class="check-btn" onclick="checkExercise('v-sports-p')">Revisar</button>
+<button class="check-btn" style="background:var(--text-muted)" onclick="shuffleExercise('v-sports-p')">Repetir (orden mezclado)</button>
+<span class="score"></span>
 </div>
-<div class="mc-feedback"></div>
-</div>
-<div class="mc-question" data-correct="Fiancé">
-<p>The person you are engaged to be married to (male).</p>
-<div class="mc-options">
-<button onclick="selectOption(this, this.closest('.mc-question'))">Fiancé</button>
-<button onclick="selectOption(this, this.closest('.mc-question'))">Partner</button>
-<button onclick="selectOption(this, this.closest('.mc-question'))">Ex</button>
-</div>
-<div class="mc-feedback"></div>
-</div>
-</div>
-<button class="check-btn" onclick="resetSection('mc-relationships')">Repetir este quiz</button>
 
-<div class="ask-teacher">💬 ¿Alguna palabra te sigue costando después de fallar el quiz un par de veces? Dime cuál y te doy 3 oraciones más de ejemplo para fijarla — o inventamos una regla mnemotécnica juntos.</div>
+<h3>Lugares según el deporte</h3>
+<div class="exercise" id="v-sports-l">
+<ol>
+<li>tennis / basketball → <input type="text" id="vsl-1" data-answer="court" placeholder="lugar"></li>
+<li>soccer / baseball → <input type="text" id="vsl-2" data-answer="field" placeholder="lugar"></li>
+<li>swimming / diving → <input type="text" id="vsl-3" data-answer="pool" placeholder="lugar"></li>
+<li>running / horse racing → <input type="text" id="vsl-4" data-answer="track" placeholder="lugar"></li>
+<li>golf → <input type="text" id="vsl-5" data-answer="course" placeholder="lugar"></li>
+<li>ski → <input type="text" id="vsl-6" data-answer="slope" placeholder="lugar"></li>
+</ol>
+<button class="check-btn" onclick="checkExercise('v-sports-l')">Revisar</button>
+<button class="check-btn" style="background:var(--text-muted)" onclick="shuffleExercise('v-sports-l')">Repetir (orden mezclado)</button>
+<span class="score"></span>
+</div>
 
-<p class="source-tag">Vocabulario extraído de Student Book pp. 153, 154, 157, 158 (Vocabulary Banks).</p>
+<h3>Verbos y phrasal verbs de deportes</h3>
+<div class="exercise" id="v-sports-v">
+<ol>
+<li>To defeat another team or person (not "win"). → <input type="text" id="vsv-1" data-answer="beat" placeholder="escribe en inglés"></li>
+<li>To not win a game (opposite of win). → <input type="text" id="vsv-2" data-answer="lose" placeholder="escribe en inglés"></li>
+<li>Both teams get the same score. → <input type="text" id="vsv-3" data-answer="tie" placeholder="escribe en inglés"></li>
+<li>To hurt yourself while playing a sport. → <input type="text" id="vsv-4" data-answer="get injured" placeholder="escribe en inglés"></li>
+<li>To do exercise to become physically fitter. → <input type="text" id="vsv-5" data-answer="get in shape" placeholder="escribe en inglés"></li>
+<li>To do gentle exercise to prepare for a game. → <input type="text" id="vsv-6" data-answer="warm up" placeholder="phrasal verb"></li>
+<li>To exercise, usually at a gym. → <input type="text" id="vsv-7" data-answer="work out" placeholder="phrasal verb"></li>
+<li>To be told to leave the field/court (red card, etc.). → <input type="text" id="vsv-8" data-answer="be sent off" placeholder="phrasal verb (pasivo)"></li>
+<li>To be eliminated from a tournament. → <input type="text" id="vsv-9" data-answer="be knocked out" placeholder="phrasal verb (pasivo)"></li>
+</ol>
+<button class="check-btn" onclick="checkExercise('v-sports-v')">Revisar</button>
+<button class="check-btn" style="background:var(--text-muted)" onclick="shuffleExercise('v-sports-v')">Repetir (orden mezclado)</button>
+<span class="score"></span>
+</div>
+
+<h2>4. Relaciones (SB p.158) — completo</h2>
+<div class="exercise" id="v-rel-p">
+<ol>
+<li>Two people who are married or in a romantic relationship. → <input type="text" id="vrp-1" data-answer="couple" placeholder="escribe en inglés"></li>
+<li>Your husband, wife, boyfriend, or girlfriend. → <input type="text" id="vrp-2" data-answer="partner" placeholder="escribe en inglés"></li>
+<li>The person that you are engaged to be married to. → <input type="text" id="vrp-3" data-answer="fiancé|fiancée" placeholder="escribe en inglés"></li>
+<li>A person that you share an apartment with. → <input type="text" id="vrp-4" data-answer="roommate" placeholder="escribe en inglés"></li>
+<li>A person that you work with. → <input type="text" id="vrp-5" data-answer="colleague" placeholder="escribe en inglés"></li>
+<li>(colloquial) a person that you used to have a relationship with. → <input type="text" id="vrp-6" data-answer="ex" placeholder="escribe en inglés"></li>
+<li>A very good friend that you can talk to about anything. → <input type="text" id="vrp-7" data-answer="close friend" placeholder="escribe en inglés"></li>
+<li>A person who is in the same class as you at school. → <input type="text" id="vrp-8" data-answer="classmate" placeholder="escribe en inglés"></li>
+</ol>
+<button class="check-btn" onclick="checkExercise('v-rel-p')">Revisar</button>
+<button class="check-btn" style="background:var(--text-muted)" onclick="shuffleExercise('v-rel-p')">Repetir (orden mezclado)</button>
+<span class="score"></span>
+</div>
+
+<h3>Verb phrases de relaciones (en pasado, como cuenta el libro una historia)</h3>
+<div class="exercise" id="v-rel-v">
+<ol>
+<li>I ______ Mark when I was studying at Boston University. (conocer por primera vez) → <input type="text" id="vrv-1" data-answer="met" placeholder="escribe en inglés"></li>
+<li>We soon ______ each other. (hacerse amigos) → <input type="text" id="vrv-2" data-answer="became friends" placeholder="escribe en inglés"></li>
+<li>We discovered that we ______ a lot. (tener cosas en común) → <input type="text" id="vrv-3" data-answer="had a lot in common" placeholder="escribe en inglés"></li>
+<li>We ______ in our second semester and fell in love. (empezar a salir/estar en pareja) → <input type="text" id="vrv-4" data-answer="went out together|started going out together" placeholder="escribe en inglés"></li>
+<li>We ______ for two years, but we argued a lot. (estar juntos como pareja) → <input type="text" id="vrv-5" data-answer="were together" placeholder="escribe en inglés"></li>
+<li>In our last semester, we ______. (terminar la relación) → <input type="text" id="vrv-6" data-answer="broke up" placeholder="escribe en inglés"></li>
+<li>After we graduated, we ______ because I moved away. (perder contacto) → <input type="text" id="vrv-7" data-answer="lost touch" placeholder="escribe en inglés"></li>
+<li>Five years later, we ______ again on Facebook. (volver a contactar) → <input type="text" id="vrv-8" data-answer="got in touch" placeholder="escribe en inglés"></li>
+<li>This time we ______ better than before. (llevarse bien) → <input type="text" id="vrv-9" data-answer="got along" placeholder="escribe en inglés"></li>
+<li>We spent time together to ______ each other again. (llegar a conocer) → <input type="text" id="vrv-10" data-answer="get to know" placeholder="escribe en inglés"></li>
+<li>After two months, Mark ______ and I accepted. (proponer matrimonio) → <input type="text" id="vrv-11" data-answer="proposed" placeholder="escribe en inglés"></li>
+<li>We ______ last summer — all our friends came to the wedding! (casarse) → <input type="text" id="vrv-12" data-answer="got married" placeholder="escribe en inglés"></li>
+</ol>
+<button class="check-btn" onclick="checkExercise('v-rel-v')">Revisar</button>
+<button class="check-btn" style="background:var(--text-muted)" onclick="shuffleExercise('v-rel-v')">Repetir (orden mezclado)</button>
+<span class="score"></span>
+</div>
+
+<div class="ask-teacher">💬 Si después de 2-3 rondas mezcladas sigues fallando la misma palabra, dímela — te doy una oración extra o un truco mnemotécnico específico para esa palabra.</div>
+
+<p class="source-tag">Vocabulario completo (100% de las Vocabulary Banks) extraído de Student Book pp. 153, 154, 157, 158.</p>
 
 <div class="nav">
 <a href="../index.html">← Índice</a>
