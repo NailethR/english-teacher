@@ -1,26 +1,30 @@
-# Mission: Inglés B1 — Examen final Units 1-5 (American English File 3, 3rd Ed.)
+# Mission: Inglés B1 — aprobar los 3 exámenes de American English File 3 (3rd Ed.)
 
 ## Why
-Naileth rinde el examen final escrito de su curso de inglés en **1 semana**. Se saltó el nivel A1, así que tiene huecos de base que le generan errores recurrentes en niveles superiores. El objetivo no es "aprender inglés" en abstracto: es llegar al día del examen dominando exactamente los puntos que la profesora listó para Units 1-5, con la menor cantidad de errores posible.
+Naileth cursa la materia con el libro _American English File 3, Third Edition_. Se saltó el nivel A1, así que tiene huecos de base que le generan errores recurrentes en niveles superiores. El objetivo no es "aprender inglés" en abstracto: es llegar a cada examen dominando exactamente los Files que entran, con la menor cantidad de errores posible.
+
+## Los 3 exámenes
+El repo crece examen a examen hasta cubrir toda la guía (Files 1-10). El alcance de cada examen lo define la profesora; los módulos nuevos se piden a medida que avanza el curso.
+
+| Examen | Alcance | Estado del material |
+|---|---|---|
+| 1 — Corte | Files 1-5, lista exacta de la profesora (Workbook pp.12-35) | Completo: plan de 7 días + simulacro (`lessons/0001`-`0011`) |
+| 2 — Semestre | Desde File 6. Alcance exacto por confirmar | En curso: 6A y 6B listos (`lessons/0012`, `0013`) |
+| 3 — Final | Por confirmar (probablemente hasta File 10) | Pendiente |
 
 ## Success looks like
-- Resuelve sin dudar los 8 tiempos verbales de la lista (Simple Present, Present Continuous, Simple Future, going to, Simple Past, Past Continuous, Present Perfect, Present Perfect Continuous, Past Perfect, used to) en ejercicios tipo File Test.
-- Usa correctamente should / can / could / be able to / have to en contexto (obligación, prohibición, habilidad, posibilidad).
-- Reconoce y usa phrasal verbs y verbos/adjetivos + preposición dependiente de la p.156 del Student Book.
-- Forma comparativos y superlativos sin dudar, incluida la ortografía irregular.
-- Distingue adjetivos participiales -ed / -ing en contexto (interested vs. interesting).
-- Recuerda el vocabulario de las Vocabulary Banks: personalidad (p.153), dinero (p.154), deportes (p.157), relaciones (p.158), verbos irregulares (p.165).
-- Completa correctamente los ejercicios de repaso del Workbook que la profesora señaló explícitamente.
-- Rinde un simulacro completo de File Test (Grammar/Vocab/Pronunciation + Reading/Writing) con nota aceptable antes del examen real.
+- **Por cada File:** domina la gramática de su Grammar Bank, el vocabulario de su Vocabulary Bank y resuelve sin dudar los ejercicios del Workbook de ese File.
+- **Por cada examen:** rinde un simulacro tipo File Test con todo el alcance antes del examen real.
+- **Examen 1 (Files 1-5), criterios originales:** 9 tiempos verbales + used to; should/can/could/be able to/have to; phrasal verbs y verbo/adjetivo + preposición (SB p.156); comparativos y superlativos; adjetivos -ed/-ing; Vocabulary Banks de personalidad, dinero, deportes, relaciones e irregulares.
+- **Examen 2 (desde File 6), hasta ahora:** reconocer y formar la voz pasiva en todos los tiempos (6A, punto débil declarado); must/might/can't de deducción (6B); vocabulario de cine (SB p.159) y del cuerpo (SB p.160).
 
 ## Constraints
-- **Examen en 1 semana** → ritmo intensivo diario, no espaciado a largo plazo. Se prioriza cobertura total del temario por sobre retención de largo plazo (esto es una excepción al principio normal de "storage strength" del método de enseñanza: aquí gana la urgencia).
-- Estudio **todos los días** hasta el examen, con **muchos ejercicios** por sesión — no lecciones cortas de "una sola victoria", sino bloques de práctica intensiva.
-- Corrección: **siempre marcar el error y explicar la regla en español**, con ejemplo correcto. Nunca dejar un error sin explicación.
-- Material de verdad = Student Book "AEF3 (3e) SB.pdf" + Workbook "American English File Third Edition 3 WorkBook.PDF" + los 5 File Tests ya rendidos. Todo ejercicio debe basarse en este material o ser fiel a su estilo — no inventar gramática ni vocabulario ajeno al libro.
-- El usuario viene sin bases de A1 → cuando un error de B1 tiene raíz en un hueco más básico (ej. confundir do/does, orden de adjetivos, tercera persona -s), hay que parar y tapar ese hueco antes de seguir, aunque no esté en el temario B1.
+- Ritmo según la distancia al examen: intensivo cuando falta poco (como el Examen 1, preparado en 1 semana), con más volumen de práctica por módulo cuando hay tiempo.
+- Corrección: **siempre marcar el error y explicar la regla en español**, con ejemplo correcto.
+- Material de verdad = Student Book + Workbook + File Tests rendidos. Todo ejercicio sale de ese material o es fiel a su estilo; no se inventa gramática ni vocabulario ajeno al libro.
+- Los ejercicios del libro no traen clave: las respuestas se deducen y son válidas si cumplen la gramática y la lógica del idioma (acordado el 2026-10-26).
+- Sin bases de A1 → cuando un error tiene raíz en un hueco más básico (do/does, tercera persona -s, verbo be), se tapa ese hueco antes de seguir.
 
 ## Out of scope
-- Speaking/Listening en profundidad (el examen es escrito) — se toca solo si aparece en el material ya extraído del Workbook, sin generar ejercicios de audio nuevos.
-- Gramática de niveles B2+ no listada por la profesora.
-- Fluidez conversacional o vocabulario fuera del temario — el foco es 100% aprobar este examen específico.
+- Speaking/Listening en profundidad (los exámenes son escritos). Los ejercicios que dependen de audio se omiten.
+- Gramática fuera de los Files del examen en curso, salvo que tape un hueco de base.

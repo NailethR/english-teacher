@@ -1,23 +1,35 @@
-# Plan intensivo — 7 días para el examen final (Units 1-5, B1)
+# Plan de estudio — por examen
 
-Reordenado tras extraer el material real del Workbook y las Vocabulary Banks del Student Book (offset Workbook=0, Student Book=PDF-1). Cada día = 1 lección en `lessons/` + referencia en `reference/` si aplica.
+Offsets de página: Workbook = número de página del PDF; Student Book = página del PDF − 1. Tema y gramática de cada File: índice del Student Book (pp.2-3 impresas).
+
+## Examen 1 — Corte (Files 1-5) · plan intensivo de 7 días
 
 | Día | Estado | Foco gramatical | Foco vocabulario | Fuente exacta |
 |---|---|---|---|---|
 | 1 | ✅ | Simple Present, Present Continuous, will, going to | Personalidad (SB p.153) | Workbook pp.7-9, File Test 1 |
 | 2 | ✅ | Simple Past vs. Present Perfect | Dinero (SB p.154) | Workbook pp.12-14 |
 | 3 | ✅ | Present Perfect continuous (for/since), Past Perfect | — (repaso de dinero) | Workbook p.15, File Test 5 |
-| 4 | ✅ | Articles (a/an/the), preposiciones dependientes (verbo/adjetivo + prep) | — | SB p.156 (Dependent prepositions), Workbook pp.21-23 |
-| 5 | ✅ | should/must/have to (obligación y prohibición), can/could/be able to, pronombres reflexivos, adjetivos -ed/-ing | Phone language | Workbook pp.26-31 |
-| 6 | ✅ | Past tenses (simple/continuous/perfect) juntos, used to, comparativos y superlativos | Deportes (SB p.157), Relaciones (SB p.158), verbos irregulares (SB p.165) | Workbook pp.32-35 |
-| 7 | ✅ | Simulacro completo tipo File Test — todos los puntos del temario mezclados | — | Formato real de los 5 File Tests ya rendidos |
+| 4 | ✅ | Articles, preposiciones dependientes | — | SB p.156, Workbook pp.21-23 |
+| 5 | ✅ | should/must/have to, can/could/be able to, reflexivos, -ed/-ing | Phone language | Workbook pp.26-31 |
+| 6 | ✅ | Los 3 pasados, used to, comparativos y superlativos | Deportes (SB p.157), Relaciones (SB p.158), irregulares (SB p.165) | Workbook pp.32-35 |
+| 7 | ✅ | Simulacro completo tipo File Test | — | Formato de los 5 File Tests |
 
-## Recursos extra (no atados a un día — usar en paralelo)
-- `lessons/0008-vocabulario-flashcards.html`: flashcards + quiz de opción múltiple para las 4 Vocabulary Banks. Memorización activa, complementa los ejercicios de completar espacios.
-- `lessons/0009-irregular-verbs-drill.html`: los 77 verbos irregulares de la p.165 en flashcards, mini-quiz y tabla completa dividida en 6 bloques de práctica. Hacer 1-2 bloques por día.
+Extra: `lessons/0008` (flashcards de las 4 Vocabulary Banks), `0009` (77 irregulares), `0010` (vocabulario 1A/2B/3A), `0011` (frases sociales).
+
+## Examen 2 — Semestre (desde File 6) · en curso
+
+| File | Estado | Gramática (Grammar Bank) | Vocabulario | Lección |
+|---|---|---|---|---|
+| 6A | ✅ | Passive (all tenses), SB p.142 — **foco en reconocimiento** | Movies (SB p.159) | `lessons/0012` + `reference/0004` |
+| 6B | ✅ | Modals of deduction: might, can't, must, SB p.143 | The body (SB p.160) | `lessons/0013` + `reference/0002` §4 |
+| 7A | ⬜ | First conditional and future time clauses + when, until, etc. | Education | — |
+| 7B | ⬜ | Second conditional, choosing between conditionals | Houses | — |
+| … | ⬜ | Según confirme la profesora el alcance | | |
+| Simulacro | ⬜ | Todo el alcance del Examen 2 | | — |
+
+## Examen 3 — Final · pendiente
 
 ## Reglas del plan
-- Cada sesión corrige SIEMPRE explicando en español, con regla + ejemplo correcto (preferencia fija del usuario).
-- Si en un día aparece un error de base (A1), se resuelve ahí mismo antes de seguir, y se registra en `learning-records/`.
-- Los simulacros usan el formato real de los File Tests ya rendidos (underline/circle, gap-fill con verbo entre paréntesis, true/false/doesn't say, matching) — nunca un formato inventado.
-- **Puntos del temario de la profesora ya cubiertos por el plan:** los 9 tiempos verbales + used to (días 1-3, 6), modales (día 5), phrasal verbs (repartidos en varios días, consolidado día 6), comparativos/superlativos (día 6), verbo/adjetivo + preposición p.156 (día 4), participial adjectives -ed/-ing (día 5), las 4 Vocabulary Banks + irregular verbs (días 1,2,6).
+- Cada sesión corrige SIEMPRE explicando en español, con regla + ejemplo correcto.
+- Si aparece un error de base (A1), se resuelve ahí mismo y se registra en `learning-records/`.
+- Los simulacros usan el formato real de los File Tests (underline/circle, gap-fill con verbo entre paréntesis, true/false/doesn't say, matching).

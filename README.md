@@ -1,23 +1,24 @@
-# Inglés B1 — Prep intensiva examen final (Units 1-5)
+# Inglés B1 — American English File 3 (3rd Ed.)
 
-Workspace de estudio construido con la skill `/mattpocock-skills:teach`. Ver [MISSION.md](./MISSION.md) para el objetivo real: aprobar el examen final escrito en 1 semana.
+Workspace de estudio que crece examen a examen hasta cubrir toda la guía. Ver [MISSION.md](./MISSION.md) para los 3 exámenes y qué entra en cada uno.
 
 ## Estructura
-- `MISSION.md` — por qué se estudia esto y qué significa "éxito".
-- `RESOURCES.md` — fuentes de verdad (Student Book, Workbook, File Tests ya rendidos).
-- `NOTES.md` — preferencias de trabajo (estilo de corrección, ritmo, etc.).
-- `study-plan.md` — reparto día a día hasta el examen.
-- `lessons/000N-*.html` — una lección por sesión, abrir en el navegador. Ejercicios interactivos con corrección automática.
-- `reference/000N-*.html` — hojas de referencia rápida (cheat sheets) por tema, para consultar durante el examen.
-- `learning-records/000N-*.md` — qué ya se domina y qué huecos de base se detectaron.
+- `MISSION.md` — los 3 exámenes, su alcance y qué significa "éxito".
+- `study-plan.md` — avance por examen y por File.
+- `COVERAGE.md` — qué ejercicio del libro está en qué lección.
+- `RESOURCES.md` — fuentes de verdad (Student Book, Workbook, File Tests).
+- `NOTES.md` — preferencias de trabajo (estilo de corrección, ritmo, cómo se agrega un módulo).
+- `lessons/NNNN-*.html` — lecciones interactivas con corrección automática. Numeración correlativa; las de File 6 en adelante se nombran `NNNN-<file>-<tema>.html` (ej. `0012-6a-passive-movies.html`).
+- `reference/NNNN-*.html` — hojas de referencia rápida por tema.
+- `learning-records/NNNN-*.md` — huecos y debilidades detectadas.
 - `assets/` — CSS y JS compartidos por todas las lecciones.
 
-## Cómo estudiar cada día
-0. Abre `index.html` para ver el mapa completo de los 7 días y las referencias rápidas.
-1. Abre la lección del día en el navegador (doble clic al `.html`, o `open lessons/000N-*.html` en terminal).
-2. Lee la explicación corta, resuelve los ejercicios, pulsa "Revisar".
-3. Cuando algo no calce, pregúntale a Claude Code en esta misma carpeta — es tu profesor y corrige explicando siempre en español.
-4. Al terminar, dile a Claude que generalmente cierre el día — así se actualiza `study-plan.md` y se registra qué quedó débil para el repaso final.
+## Cómo estudiar
+0. Abre `index.html`: las lecciones están agrupadas por examen.
+1. Abre la lección en el navegador (doble clic al `.html`, o `open lessons/NNNN-*.html`).
+2. Lee la explicación, resuelve los ejercicios, pulsa "Revisar".
+3. Cuando algo no calce, pregúntale a Claude Code en esta misma carpeta: corrige explicando en español.
+4. Cuando venga un examen nuevo, pide los módulos que entran (ej. "agrega 7A y 7B").
 
 ## Material fuente (no versionado en git)
-Los PDF del Student Book, Workbook y los File Tests son material con copyright de Oxford University Press — quedan en esta carpeta pero excluidos de git vía `.gitignore`.
+Los PDF del Student Book, Workbook y los File Tests tienen copyright de Oxford University Press: quedan en esta carpeta pero excluidos de git vía `.gitignore`.
