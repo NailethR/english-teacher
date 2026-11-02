@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Vocabulario Semestre — Flashcards</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<h1><span class="unit-tag">VOCABULARIO · SEMESTRE</span>Vocabulary Bank — Repasa y luego escribe</h1>
+<p class="subtitle">Las palabras a aprender de cada File del Semestre (SB pp.159-160). Crece con cada File nuevo.</p>
+
+<div class="card">
+<strong>Dos pasos por bloque:</strong><br>1) <strong>Flashcards</strong>: clic para voltear. Repásalas hasta reconocerlas sin voltear.<br>2) <strong>Escribe</strong> sin mirar las flashcards. Pulsa "Revisar" y, cuando saques el puntaje completo, "Repetir (orden mezclado)".<br>Hazlo <strong>antes</strong> de la sección de vocabulario del Día.
+</div>
+
+<h2 id="movies">1. Movies — 6A (SB p.159)</h2>
+<h3>Kinds of movies — Paso 1: flashcards</h3>
+<div class="flashcard-grid" id="fc-kinds">
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">action movie</div><div class="back">película de acción</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">animated movie</div><div class="back">película animada</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">drama</div><div class="back">drama</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">historical movie</div><div class="back">película histórica</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">horror movie</div><div class="back">película de terror</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">musical</div><div class="back">musical</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">rom-com</div><div class="back">comedia romántica</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">science fiction movie</div><div class="back">película de ciencia ficción</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">thriller</div><div class="back">thriller, película de suspenso</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">war movie</div><div class="back">película bélica</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">western</div><div class="back">película del oeste</div></div>
+</div>
+<button class="check-btn" onclick="resetSection('fc-kinds')">Repetir</button>
+
+<div class="exercise" id="v-kinds">
+<h3>Kinds of movies — Paso 2: escríbelas</h3>
+<ol>
+<li>película de acción → <input type="text" id="vk-1" data-answer="action movie" placeholder="escribe en inglés"></li>
+<li>película animada → <input type="text" id="vk-2" data-answer="animated movie" placeholder="escribe en inglés"></li>
+<li>drama → <input type="text" id="vk-3" data-answer="drama" placeholder="escribe en inglés"></li>
+<li>película histórica → <input type="text" id="vk-4" data-answer="historical movie" placeholder="escribe en inglés"></li>
+<li>película de terror → <input type="text" id="vk-5" data-answer="horror movie" placeholder="escribe en inglés"></li>
+<li>musical → <input type="text" id="vk-6" data-answer="musical" placeholder="escribe en inglés"></li>
+<li>comedia romántica → <input type="text" id="vk-7" data-answer="rom-com|romcom|romantic comedy" placeholder="escribe en inglés"></li>
+<li>película de ciencia ficción → <input type="text" id="vk-8" data-answer="science fiction movie|sci-fi movie" placeholder="escribe en inglés"></li>
+<li>thriller, película de suspenso → <input type="text" id="vk-9" data-answer="thriller" placeholder="escribe en inglés"></li>
+<li>película bélica → <input type="text" id="vk-10" data-answer="war movie" placeholder="escribe en inglés"></li>
+<li>película del oeste → <input type="text" id="vk-11" data-answer="western" placeholder="escribe en inglés"></li>
+</ol>
+<button class="check-btn" onclick="checkExercise('v-kinds')">Revisar</button>
+<button class="check-btn" style="background:var(--text-muted)" onclick="shuffleExercise('v-kinds')">Repetir (orden mezclado)</button>
+<span class="score"></span>
+</div>
+
+<h3>People and things — Paso 1: flashcards</h3>
+<div class="flashcard-grid" id="fc-people">
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">audience</div><div class="back">público</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">cast</div><div class="back">reparto</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">critic</div><div class="back">crítico/a</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">extra</div><div class="back">extra (actor de relleno)</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">plot</div><div class="back">trama, argumento</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">review</div><div class="back">reseña, crítica</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">scene</div><div class="back">escena</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">script</div><div class="back">guion</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">sequel</div><div class="back">secuela, continuación</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">set</div><div class="back">set de filmación, escenografía</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">soundtrack</div><div class="back">banda sonora</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">special effects</div><div class="back">efectos especiales</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">star</div><div class="back">estrella, protagonista (también verbo: protagonizar)</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">subtitles</div><div class="back">subtítulos</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">trailer</div><div class="back">tráiler, avance</div></div>
+</div>
+<button class="check-btn" onclick="resetSection('fc-people')">Repetir</button>
+
+<div class="exercise" id="ex-people">
+<h3>People and things — Paso 2: match the nouns and definitions (SB p.159, 2a)</h3>
+<p class="en" style="font-size:0.85rem">Lista: audience · cast (dado) · critic · extra · plot · review · scene · script · sequel · set · soundtrack · special effects · star · subtitles · trailer</p>
+<ol>
+<li>all the people who act in a movie → <span class="en">cast</span> (ejemplo)</li>
+<li>(also <em>verb</em>) the most important actor in a movie → <input type="text" id="pp-2" data-answer="star" placeholder="palabra">
+<div class="explain" data-for="pp-2" data-rule="star (también verbo: It stars Liam Neeson)."></div></li>
+<li>the music of a movie → <input type="text" id="pp-3" data-answer="soundtrack" placeholder="palabra">
+<div class="explain" data-for="pp-3" data-rule="soundtrack (banda sonora)."></div></li>
+<li>the story of a movie → <input type="text" id="pp-4" data-answer="plot" placeholder="palabra">
+<div class="explain" data-for="pp-4" data-rule="plot (trama)."></div></li>
+<li>a part of a movie that happens in one place → <input type="text" id="pp-5" data-answer="scene" placeholder="palabra">
+<div class="explain" data-for="pp-5" data-rule="scene (escena)."></div></li>
+<li>the people who watch a movie in a movie theater → <input type="text" id="pp-6" data-answer="audience" placeholder="palabra">
+<div class="explain" data-for="pp-6" data-rule="audience (público). En deporte se dice crowd/spectators."></div></li>
+<li>a movie that continues the story of an earlier movie → <input type="text" id="pp-7" data-answer="sequel" placeholder="palabra">
+<div class="explain" data-for="pp-7" data-rule="sequel (secuela)."></div></li>
+<li>images often created by a computer → <input type="text" id="pp-8" data-answer="special effects" placeholder="palabra">
+<div class="explain" data-for="pp-8" data-rule="special effects (efectos especiales)."></div></li>
+<li>a series of short scenes from a movie, shown in advance to advertise it → <input type="text" id="pp-9" data-answer="trailer" placeholder="palabra">
+<div class="explain" data-for="pp-9" data-rule="trailer (avance)."></div></li>
+<li>the words of a movie → <input type="text" id="pp-10" data-answer="script" placeholder="palabra">
+<div class="explain" data-for="pp-10" data-rule="script (guion). Diferencia con plot: plot es la historia; script son las palabras escritas."></div></li>
+<li>a person who is employed to play a very small part in a movie, usually as a member of a crowd → <input type="text" id="pp-11" data-answer="extra" placeholder="palabra">
+<div class="explain" data-for="pp-11" data-rule="extra."></div></li>
+<li>the translation of the dialogue of a movie on screen → <input type="text" id="pp-12" data-answer="subtitles" placeholder="palabra">
+<div class="explain" data-for="pp-12" data-rule="subtitles (subtítulos)."></div></li>
+<li>an article that gives an opinion about a new movie → <input type="text" id="pp-13" data-answer="review" placeholder="palabra">
+<div class="explain" data-for="pp-13" data-rule="review (reseña) = el texto. critic = la persona que lo escribe."></div></li>
+<li>the place where a movie is being shot; the scenery used for a movie or play → <input type="text" id="pp-14" data-answer="set" placeholder="palabra">
+<div class="explain" data-for="pp-14" data-rule="set (set de filmación). Ojo: be set in = estar ambientada en."></div></li>
+<li>a person who writes movie reviews for the press → <input type="text" id="pp-15" data-answer="critic" placeholder="palabra">
+<div class="explain" data-for="pp-15" data-rule="critic (crítico)."></div></li>
+</ol>
+<button class="check-btn" onclick="checkExercise('ex-people')">Revisar</button>
+<button class="check-btn" style="background:var(--text-muted)" onclick="shuffleExercise('ex-people')">Repetir (mezclado)</button>
+<span class="score"></span>
+</div>
+
+<h3>Verbs and verb phrases — Paso 1: flashcards</h3>
+<div class="flashcard-grid" id="fc-phrases">
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">be based on</div><div class="back">estar basada en</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">be set in</div><div class="back">estar ambientada en</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">be directed by</div><div class="back">estar dirigida por</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">play the part of</div><div class="back">hacer el papel de</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">be shot on location</div><div class="back">filmarse en exteriores, fuera del estudio</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">be dubbed</div><div class="back">estar doblada</div></div>
+</div>
+<button class="check-btn" onclick="resetSection('fc-phrases')">Repetir</button>
+
+<h3>Verbs and verb phrases — Paso 2: ¿qué significa? (SB p.159, 3a)</h3>
+<div id="mc-verbs">
+<div class="mc-question" data-correct="The movie is an adaptation of a true story."><p>1. The movie <strong>is based on</strong> the story of opera singer Florence Foster Jenkins.</p>
+<div class="mc-options"><button onclick="selectOption(this, this.closest('.mc-question'))">The movie is an adaptation of a true story.</button><button onclick="selectOption(this, this.closest('.mc-question'))">It is situated in that place at that time.</button><button onclick="selectOption(this, this.closest('.mc-question'))">This is his role in the movie.</button></div>
+<div class="mc-feedback" data-rule="be based on = estar basada en (E)."></div></div>
+<div class="mc-question" data-correct="It is situated in that place at that time."><p>2. It <strong>is set in</strong> New York during the 1940s.</p>
+<div class="mc-options"><button onclick="selectOption(this, this.closest('.mc-question'))">It was filmed outside the studio.</button><button onclick="selectOption(this, this.closest('.mc-question'))">It is situated in that place at that time.</button><button onclick="selectOption(this, this.closest('.mc-question'))">He is the director.</button></div>
+<div class="mc-feedback" data-rule="be set in = estar ambientada en (A). No dice dónde se filmó."></div></div>
+<div class="mc-question" data-correct="He is the director."><p>3. It <strong>is directed by</strong> Stephen Frears.</p>
+<div class="mc-options"><button onclick="selectOption(this, this.closest('.mc-question'))">This is his role in the movie.</button><button onclick="selectOption(this, this.closest('.mc-question'))">He is the director.</button><button onclick="selectOption(this, this.closest('.mc-question'))">The movie is an adaptation of a true story.</button></div>
+<div class="mc-feedback" data-rule="be directed by = dirigida por (B)."></div></div>
+<div class="mc-question" data-correct="This is his role in the movie."><p>4. Hugh Grant <strong>plays the part of</strong> Florence's husband and manager.</p>
+<div class="mc-options"><button onclick="selectOption(this, this.closest('.mc-question'))">He is the director.</button><button onclick="selectOption(this, this.closest('.mc-question'))">This is his role in the movie.</button><button onclick="selectOption(this, this.closest('.mc-question'))">It was filmed outside the studio.</button></div>
+<div class="mc-feedback" data-rule="play the part of = interpretar el papel de (C). Es activa: el actor hace la acción."></div></div>
+<div class="mc-question" data-correct="It was filmed outside the studio."><p>5. It <strong>was shot (or filmed) on location</strong> in Liverpool.</p>
+<div class="mc-options"><button onclick="selectOption(this, this.closest('.mc-question'))">It was filmed outside the studio.</button><button onclick="selectOption(this, this.closest('.mc-question'))">It is situated in that place at that time.</button><button onclick="selectOption(this, this.closest('.mc-question'))">The words are spoken in a different language by foreign actors.</button></div>
+<div class="mc-feedback" data-rule="shot on location = filmada en exteriores reales (F). Comparar con set in: la historia ocurre en Nueva York, pero se filmó en Liverpool."></div></div>
+<div class="mc-question" data-correct="The words are spoken in a different language by foreign actors."><p>6. It <strong>is dubbed</strong> into other languages.</p>
+<div class="mc-options"><button onclick="selectOption(this, this.closest('.mc-question'))">This is his role in the movie.</button><button onclick="selectOption(this, this.closest('.mc-question'))">The words are spoken in a different language by foreign actors.</button><button onclick="selectOption(this, this.closest('.mc-question'))">The movie is an adaptation of a true story.</button></div>
+<div class="mc-feedback" data-rule="be dubbed = estar doblada (D). Distinto de subtitles (se lee el texto en pantalla)."></div></div>
+</div>
+<button class="check-btn" onclick="resetSection('mc-verbs')">Repetir</button>
+
+
+<h2 id="body">2. The body — 6B (SB p.160)</h2>
+<div class="rule"><p><strong>Plurales irregulares:</strong> <span class="en">foot → feet</span>, <span class="en">tooth → teeth</span>. Con el cuerpo se usa posesivo: <span class="en">I hurt <strong>my</strong> back</span> (no <em>the back</em>).</p></div>
+<h3>Parts of the body — Paso 1: flashcards</h3>
+<div class="flashcard-grid" id="fc-parts">
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">arms</div><div class="back">brazos</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">back</div><div class="back">espalda</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">chin</div><div class="back">mentón</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">ears</div><div class="back">orejas</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">eyes</div><div class="back">ojos</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">face</div><div class="back">cara</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">feet (foot)</div><div class="back">pies (un pie)</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">fingers</div><div class="back">dedos de la mano</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">hands</div><div class="back">manos</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">head</div><div class="back">cabeza</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">knees</div><div class="back">rodillas</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">legs</div><div class="back">piernas</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">lips</div><div class="back">labios</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">mouth</div><div class="back">boca</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">neck</div><div class="back">cuello</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">nose</div><div class="back">nariz</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">shoulders</div><div class="back">hombros</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">stomach</div><div class="back">estómago</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">teeth (tooth)</div><div class="back">dientes (un diente)</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">thumb</div><div class="back">pulgar</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">toes</div><div class="back">dedos del pie</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">tongue</div><div class="back">lengua</div></div>
+</div>
+<button class="check-btn" onclick="resetSection('fc-parts')">Repetir</button>
+
+<div class="exercise" id="ex-parts">
+<h3>Parts of the body — Paso 2: escríbelas (SB p.160, 1a)</h3>
+<p>El libro usa fotos; aquí va la traducción. Escribe la palabra en inglés tal como aparece en la lista (plural si el libro la da en plural).</p>
+<ol>
+<li>brazos → <input type="text" id="bp-1" data-answer="arms" placeholder="inglés"><div class="explain" data-for="bp-1" data-rule="arms."></div></li>
+<li>espalda → <input type="text" id="bp-2" data-answer="back" placeholder="inglés"><div class="explain" data-for="bp-2" data-rule="back."></div></li>
+<li>mentón / barbilla → <input type="text" id="bp-3" data-answer="chin" placeholder="inglés"><div class="explain" data-for="bp-3" data-rule="chin."></div></li>
+<li>orejas → <input type="text" id="bp-4" data-answer="ears" placeholder="inglés"><div class="explain" data-for="bp-4" data-rule="ears."></div></li>
+<li>ojos → <input type="text" id="bp-5" data-answer="eyes" placeholder="inglés"><div class="explain" data-for="bp-5" data-rule="eyes."></div></li>
+<li>cara → <input type="text" id="bp-6" data-answer="face" placeholder="inglés"><div class="explain" data-for="bp-6" data-rule="face."></div></li>
+<li>pies (plural) → <input type="text" id="bp-7" data-answer="feet" placeholder="inglés"><div class="explain" data-for="bp-7" data-rule="feet (singular: foot) — plural irregular."></div></li>
+<li>dedos de la mano → <input type="text" id="bp-8" data-answer="fingers" placeholder="inglés"><div class="explain" data-for="bp-8" data-rule="fingers (los del pie son toes)."></div></li>
+<li>manos → <input type="text" id="bp-9" data-answer="hands" placeholder="inglés"><div class="explain" data-for="bp-9" data-rule="hands."></div></li>
+<li>cabeza → <input type="text" id="bp-10" data-answer="head" placeholder="inglés"><div class="explain" data-for="bp-10" data-rule="head."></div></li>
+<li>rodillas → <input type="text" id="bp-11" data-answer="knees" placeholder="inglés"><div class="explain" data-for="bp-11" data-rule="knees (la k no se pronuncia: /niz/)."></div></li>
+<li>piernas → <input type="text" id="bp-12" data-answer="legs" placeholder="inglés"><div class="explain" data-for="bp-12" data-rule="legs."></div></li>
+<li>labios → <input type="text" id="bp-13" data-answer="lips" placeholder="inglés"><div class="explain" data-for="bp-13" data-rule="lips."></div></li>
+<li>boca → <input type="text" id="bp-14" data-answer="mouth" placeholder="inglés"><div class="explain" data-for="bp-14" data-rule="mouth."></div></li>
+<li>cuello → <input type="text" id="bp-15" data-answer="neck" placeholder="inglés"><div class="explain" data-for="bp-15" data-rule="neck."></div></li>
+<li>nariz → <input type="text" id="bp-16" data-answer="nose" placeholder="inglés"><div class="explain" data-for="bp-16" data-rule="nose."></div></li>
+<li>hombros → <input type="text" id="bp-17" data-answer="shoulders" placeholder="inglés"><div class="explain" data-for="bp-17" data-rule="shoulders."></div></li>
+<li>estómago → <input type="text" id="bp-18" data-answer="stomach" placeholder="inglés"><div class="explain" data-for="bp-18" data-rule="stomach (ch suena /k/)."></div></li>
+<li>dientes (plural) → <input type="text" id="bp-19" data-answer="teeth" placeholder="inglés"><div class="explain" data-for="bp-19" data-rule="teeth (singular: tooth) — plural irregular."></div></li>
+<li>pulgar → <input type="text" id="bp-20" data-answer="thumb" placeholder="inglés"><div class="explain" data-for="bp-20" data-rule="thumb (la b no se pronuncia: /θʌm/)."></div></li>
+<li>dedos del pie → <input type="text" id="bp-21" data-answer="toes" placeholder="inglés"><div class="explain" data-for="bp-21" data-rule="toes."></div></li>
+<li>lengua → <input type="text" id="bp-22" data-answer="tongue" placeholder="inglés"><div class="explain" data-for="bp-22" data-rule="tongue /tʌŋ/."></div></li>
+<li>un pie (singular) → <input type="text" id="bp-23" data-answer="foot" placeholder="inglés"><div class="explain" data-for="bp-23" data-rule="foot → feet."></div></li>
+<li>un diente (singular) → <input type="text" id="bp-24" data-answer="tooth" placeholder="inglés"><div class="explain" data-for="bp-24" data-rule="tooth → teeth."></div></li>
+</ol>
+<button class="check-btn" onclick="checkExercise('ex-parts')">Revisar</button>
+<button class="check-btn" style="background:var(--text-muted)" onclick="shuffleExercise('ex-parts')">Repetir (mezclado)</button>
+<span class="score"></span>
+</div>
+
+<h3>Verbs related to the body — Paso 1: flashcards</h3>
+<div class="flashcard-grid" id="fc-verbs">
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">bite</div><div class="back">morder</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">clap</div><div class="back">aplaudir</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">kick</div><div class="back">patear</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">nod</div><div class="back">asentir con la cabeza</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">point</div><div class="back">señalar</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">smell</div><div class="back">oler</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">smile</div><div class="back">sonreír</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">stare</div><div class="back">mirar fijamente</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">taste</div><div class="back">probar, saber a</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">touch</div><div class="back">tocar</div></div>
+<div class="flashcard" onclick="toggleFlashcard(this)"><div class="front">whistle</div><div class="back">silbar</div></div>
+</div>
+<button class="check-btn" onclick="resetSection('fc-verbs')">Repetir</button>
+
+<div class="exercise" id="ex-vb160">
+<h3>Verbs related to the body — Paso 2: complete in the correct tense (SB p.160, 2a)</h3>
+<p>Ojo: aquí hay que <strong>conjugar</strong> (pasado, 3ª persona -s). Lista: bite · clap · kick · nod · point · smell · smile · stare · taste · touch · whistle</p>
+<ol>
+<li>Don't be frightened of the dog. He won't <span class="en">bite</span>. (ejemplo)</li>
+<li>Jason <input type="text" id="vb-2" data-answer="kicked" placeholder="verbo"> the ball too hard and it went over the wall into the next yard.
+<div class="explain" data-for="vb-2" data-rule="Narración en pasado (went) → kicked."></div></li>
+<li>Mmm! Something <input type="text" id="vb-3" data-answer="smells" placeholder="verbo"> delicious! Are you making a cake?
+<div class="explain" data-for="vb-3" data-rule="Something = 3ª persona singular → smells (hueco A1: la -s)."></div></li>
+<li>The stranger <input type="text" id="vb-4" data-answer="stared" placeholder="verbo"> at me for a long time, but he didn't say anything.
+<div class="explain" data-for="vb-4" data-rule="Pasado (didn't say) → stared."></div></li>
+<li>Can you <input type="text" id="vb-5" data-answer="taste" placeholder="verbo"> the sauce? I'm not sure if it needs more salt.
+<div class="explain" data-for="vb-5" data-rule="Después de can → verbo base."></div></li>
+<li>My dog always comes back when I <input type="text" id="vb-6" data-answer="whistle" placeholder="verbo">.
+<div class="explain" data-for="vb-6" data-rule="Hábito presente, sujeto I → whistle."></div></li>
+<li>Don't <input type="text" id="vb-7" data-answer="touch" placeholder="verbo"> the oven door! It's really hot.
+<div class="explain" data-for="vb-7" data-rule="Imperativo negativo → touch."></div></li>
+<li>The audience <input type="text" id="vb-8" data-answer="clapped" placeholder="verbo"> when I finished singing.
+<div class="explain" data-for="vb-8" data-rule="Pasado → clapped (se dobla la p: clap → clapped)."></div></li>
+<li>The teacher suddenly <input type="text" id="vb-9" data-answer="pointed" placeholder="verbo"> at me and said, "What's the answer?" I hadn't even heard the question!
+<div class="explain" data-for="vb-9" data-rule="Pasado → pointed (la -ed suena /ɪd/)."></div></li>
+<li>He's a very serious person — he never <input type="text" id="vb-10" data-answer="smiles" placeholder="verbo">.
+<div class="explain" data-for="vb-10" data-rule="Hábito, he → smiles."></div></li>
+<li>Everybody <input type="text" id="vb-11" data-answer="nodded" placeholder="verbo"> in agreement when I explained my idea.
+<div class="explain" data-for="vb-11" data-rule="Pasado → nodded (se dobla la d)."></div></li>
+</ol>
+<button class="check-btn" onclick="checkExercise('ex-vb160')">Revisar</button>
+<button class="check-btn" style="background:var(--text-muted)" onclick="shuffleExercise('ex-vb160')">Repetir (mezclado)</button>
+<span class="score"></span>
+</div>
+
+
+<p class="source-tag">Vocabulary Bank Movies (SB p.159) y The body (SB p.160). Las traducciones al español son propias.</p>
+
+<div class="nav">
+<a href="../index.html">← Índice</a>
+<a href="0012-6a-passive-movies.html">Día 1 — 6A →</a>
+</div>
+
+<script src="../assets/quiz.js"></script>
+</body>
+</html>

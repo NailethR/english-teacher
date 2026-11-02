@@ -18,14 +18,16 @@ Extra: `lessons/0008` (flashcards de las 4 Vocabulary Banks), `0009` (77 irregul
 
 ## Examen 2 — Semestre (desde File 6) · en curso
 
-| File | Estado | Gramática (Grammar Bank) | Vocabulario | Lección |
-|---|---|---|---|---|
-| 6A | ✅ | Passive (all tenses), SB p.142 — **foco en reconocimiento** | Movies (SB p.159) | `lessons/0012` + `reference/0004` |
-| 6B | ✅ | Modals of deduction: might, can't, must, SB p.143 | The body (SB p.160) | `lessons/0013` + `reference/0002` §4 |
-| 7A | ⬜ | First conditional and future time clauses + when, until, etc. | Education | — |
-| 7B | ⬜ | Second conditional, choosing between conditionals | Houses | — |
-| … | ⬜ | Según confirme la profesora el alcance | | |
-| Simulacro | ⬜ | Todo el alcance del Examen 2 | | — |
+Formato (2026-11-02): **un día por File**. La lección = explicación de 1 minuto + ejercicios del Workbook en orden. La Vocabulary Bank va a `lessons/0014` (flashcards). El Grammar Bank queda como opcional o refuerzo.
+
+| Día | File | Estado | Gramática (Grammar Bank) | Vocabulario | Lección |
+|---|---|---|---|---|---|
+| 1 | 6A | ✅ | Passive (all tenses), SB p.142 | Movies (SB p.159) | `lessons/0012` · refuerzo `lessons/0015` |
+| 2 | 6B | ✅ | Modals of deduction: might, can't, must, SB p.143 | The body (SB p.160) | `lessons/0013` |
+| 3 | 7A | ⬜ | First conditional and future time clauses + when, until, etc. | Education | — |
+| 4 | 7B | ⬜ | Second conditional, choosing between conditionals | Houses | — |
+| … | … | ⬜ | Según confirme la profesora el alcance | | |
+| — | Simulacro | ⬜ | Todo el alcance del Examen 2 + Review and Check 5&6 (SB p.64) | | — |
 
 ## Examen 3 — Final · pendiente
 

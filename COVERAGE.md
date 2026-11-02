@@ -34,21 +34,18 @@ Cada File cubre todos los ejercicios de su Grammar Bank, Vocabulary Bank y Workb
 
 | Fuente | Ejercicio | Dónde está |
 |---|---|---|
-| SB p.142 Grammar Bank 6A | a (10), b (10) + explicación | `lessons/0012-6a-passive-movies.html` — sección 0, Ejercicios A y D |
-| SB p.57 | 2a (6 extractos) | `lessons/0012` — Drill R7 |
-| SB p.56 (artículo *The world of extras*) | 20 frases para reconocer activa/pasiva | `lessons/0012` — Drill R2 |
-| SB p.58, WB pp.40-42 (textos) | localizar la pasiva, pasiva escondida | `lessons/0012` — Drills R3 y R5 |
-| SB p.58 | 4c (pares que se confunden) | `lessons/0012` — Ejercicio N |
-| SB p.159 Vocabulary Bank Movies | 2a (15), 3a (6) | `lessons/0012` — Ejercicios I y K |
-| Workbook p.40 | 1a, 1b, 1c | `lessons/0012` — Ejercicios B, C y sección 4 |
-| Workbook p.41 | 2a (pronunciación), 3a | `lessons/0012` — sección 7, Ejercicio H |
-| Workbook p.42 | 3b, 3c | `lessons/0012` — Ejercicios J y L |
-| SB p.143 Grammar Bank 6B | a (9), b (10) + explicación | `lessons/0013-6b-modals-deduction-body.html` — sección 0, Ejercicios A y D |
-| SB p.61 | 2b | `lessons/0013` — sección 1 |
-| SB p.160 Vocabulary Bank The body | 1a (22, con traducción en vez de fotos), 2a (11) | `lessons/0013` — Ejercicios H y L |
-| Workbook p.43 | 1a, 1b, 1c | `lessons/0013` — Ejercicios B, C, E |
-| Workbook p.44 | 2a, 2b (dibujo/fotos reemplazados por pistas) | `lessons/0013` — Ejercicios I y J |
-| Workbook p.45 | 2c, 2d, 3a | `lessons/0013` — Ejercicios K, M y sección 6 |
+| Workbook p.40 | 1a, 1b, 1c | `lessons/0012-6a-passive-movies.html` (Día 1) — Ejercicios A, B, C |
+| Workbook p.41 | 3a (2a pronunciación: excluida a pedido) | `lessons/0012` — Ejercicio D |
+| Workbook p.42 | 3b, 3c | `lessons/0012` — Ejercicios E, F |
+| Workbook p.43 | 1a, 1b, 1c | `lessons/0013-6b-modals-deduction-body.html` (Día 2) — Ejercicios A, B, C |
+| Workbook p.44 | 2a, 2b (dibujo/fotos reemplazados por pistas) | `lessons/0013` — Ejercicios D, E |
+| Workbook p.45 | 2c, 2d (3a pronunciación: excluida a pedido) | `lessons/0013` — Ejercicios F, G |
+| SB p.159 Vocabulary Bank Movies | 1 (kinds), 2a (15), 3a (6) | `lessons/0014-vocabulario-flashcards-semestre.html` — flashcards + escritura |
+| SB p.160 Vocabulary Bank The body | 1a (22, traducción en vez de fotos), 2a (11) | `lessons/0014` — flashcards + escritura |
+| SB p.142 Grammar Bank 6A | a (10), b (10) + explicación | `lessons/0015-refuerzo-voz-pasiva.html` — Ejercicios 5 y 6; explicación resumida en `lessons/0012` §1 |
+| SB p.57 | 2a (6 extractos) | `lessons/0015` — Ejercicio 4 |
+| SB p.143 Grammar Bank 6B | a (9), b (10) + explicación | `lessons/0013` — bloque opcional al final; explicación resumida en §1 |
+| SB p.64 Review and Check 5&6 | Grammar 8-15, Vocabulary | Pendiente: va al simulacro del Semestre |
 | SB p.64 Review and Check 5&6 | Grammar 8-15, Vocabulary a y d | `lessons/0012` sección 5 + Ejercicio M; `lessons/0013` sección 4 + Ejercicio M |
 
 Práctica extra propia (mismo formato): 0012 Drills R1, R4, R6 y Ejercicios E, F, G (foco en reconocer la pasiva, ver `learning-records/0002`); 0013 Ejercicios F, G.
